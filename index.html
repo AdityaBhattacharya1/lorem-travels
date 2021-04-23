@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Lorem Inpsum Travel Agency" />
+        <meta
+            name="keywords"
+            content="lorem, ipsum, lorem travels, ipsum travels, travel agency, "
+        />
+        <meta name="author" content="Aditya Bhattacharya" />
+        <meta
+            property="og:title"
+            content="Lorem Travels - A totally real travel agency"
+        />
+        <meta
+            property="og:image"
+            content="https://thumbs.dreamstime.com/z/logo-sample-mountain-snow-head-logo-sample-mountain-snow-head-vector-illustration-vector-design-166840569.jpg"
+        />
+        <meta
+            property="twitter:site"
+            content="Lorem Travels - By Aditya Bhattacharya"
+        />
+        <meta
+            property="twitter:description"
+            content="Lorem Ipsum Travel Agency"
+        />
+        <meta property="twitter:title" content="Lorem Ipsum Travel Agency" />
+        <meta
+            property="twitter:image"
+            content="https://thumbs.dreamstime.com/z/logo-sample-mountain-snow-head-logo-sample-mountain-snow-head-vector-illustration-vector-design-166840569.jpg"
+        />
+        <meta
+            name="twitter:card"
+            content="Lorem Travels - A totally real travel agency"
+        />
+        <meta
+            property="twitter:image:alt"
+            content="Company name - Lorem Travels"
+        />
+        <title>Lorem Travels</title>
+        <link rel="stylesheet" href="light-mode.css" id="theme-link" />
+        <link
+            rel="shortcut icon"
+            href="./Images/Lorem-Travels-favicon.ico"
+            type="image/x-icon"
+        />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="manifest" href="./manifest.json" />
+        <link
+            rel="apple-touch-icon"
+            href="%PUBLIC_URL%/Images/Lorem-Travels-favicon.ico"
+        />
+        <script src="./service-worker.js" type="module"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function () {
+                    navigator.serviceWorker.register('/service-worker.js')
+                })
+            }
+        </script>
+        <!-- Icons (for PWA) -->
+        <link rel="apple-touch-icon" href="icons/apple-icon-180.png" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-2048-2732.jpg"
+            media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-2732-2048.jpg"
+            media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1668-2388.jpg"
+            media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-2388-1668.jpg"
+            media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1536-2048.jpg"
+            media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-2048-1536.jpg"
+            media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1668-2224.jpg"
+            media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-2224-1668.jpg"
+            media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1620-2160.jpg"
+            media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-2160-1620.jpg"
+            media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1284-2778.jpg"
+            media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-2778-1284.jpg"
+            media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1170-2532.jpg"
+            media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-2532-1170.jpg"
+            media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1125-2436.jpg"
+            media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-2436-1125.jpg"
+            media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1242-2688.jpg"
+            media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-2688-1242.jpg"
+            media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-828-1792.jpg"
+            media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1792-828.jpg"
+            media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1242-2208.jpg"
+            media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-2208-1242.jpg"
+            media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-750-1334.jpg"
+            media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1334-750.jpg"
+            media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-640-1136.jpg"
+            media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
+        />
+        <link
+            rel="apple-touch-startup-image"
+            href="icons/apple-splash-1136-640.jpg"
+            media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
+        />
+    </head>
+    <body>
+        <!-- Preloader (optional) -->
+        <!-- <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>-->
+        <!-- Navbar -->
+        <header id="navbar">
+            <nav class="navbar-container container">
+                <a href="#" class="home-link">
+                    <div class="navbar-logo"></div>
+                    Lorem Travels
+                </a>
+                <button
+                    type="button"
+                    class="navbar-toggle"
+                    aria-label="Open navigation menu"
+                >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-menu">
+                    <ul class="navbar-links">
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#about">About</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#trending">Trending</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#destinations"
+                                >Destinations</a
+                            >
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="navbar-item">
+                            <button class="navbar-item" id="dark-toggle-btn">
+                                <img
+                                    src="./Images/dark-mode-btn.svg"
+                                    alt="Dark mode button"
+                                />
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Clickable slideshow-->
+        <section class="intro">
+            <div class="slideshow-container">
+                <div class="box box1">
+                    <div class="content">
+                        <h2>Advent</h2>
+                    </div>
+                </div>
+                <div class="box box2">
+                    <div class="content">
+                        <h2>Discover</h2>
+                    </div>
+                </div>
+                <div class="box box3">
+                    <div class="content">
+                        <h2>Experience</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slideshowContainer">
+                <img
+                    class="imageSlides lazy"
+                    data-src="./Images/Advent-img.png"
+                    alt="beach side city view"
+                />
+                <img
+                    class="imageSlides lazy"
+                    data-src="./Images/Discover-img.png"
+                    alt="leaf on the ground"
+                />
+                <img
+                    class="imageSlides lazy"
+                    data-src="./Images/Exp-img.png"
+                    alt="lake surrounded by mountains"
+                />
+                <span id="leftArrow" class="slideshowArrow">&#8249;</span>
+                <span id="rightArrow" class="slideshowArrow">&#8250;</span>
+
+                <div class="slideshowCircles">
+                    <span class="circle dot"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                </div>
+            </div>
+            <br />
+            <p class="indicator">Click the images to expand ↑</p>
+            <br />
+            <hr />
+            <br />
+        </section>
+        <!-- About section-->
+        <section id="about">
+            <div class="about-section">
+                <div class="inner-container">
+                    <h1>About Us</h1>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Deleniti eius odit quas perferendis ad at veniam ipsam!
+                        In placeat facere numquam, cupiditate laboriosam
+                        asperiores sequi ipsum? Nesciunt labore architecto
+                        similique!
+                    </p>
+                    <div class="deals">
+                        <span><a href="#testimonials">Testimonials</a></span>
+                        <span><a href="#trending">Trending</a></span>
+                        <span><a href="#destinations">Destinations</a></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br />
+        <hr />
+        <br />
+        <!-- Testimonials -->
+        <section id="testimonials">
+            <h1 id="testimonial-header" style="text-decoration: underline">
+                Our Testimonials
+            </h1>
+            <div class="container">
+                <section id="testim" class="testim">
+                    <div class="testim-cover">
+                        <div class="wrap">
+                            <span
+                                id="right-arrow"
+                                class="arrow right fa fa-chevron-right"
+                            ></span>
+                            <span
+                                id="left-arrow"
+                                class="arrow left fa fa-chevron-left"
+                            ></span>
+                            <ul id="testim-dots" class="dots">
+                                <li class="dot active"></li>
+
+                                <li class="dot"></li>
+
+                                <li class="dot"></li>
+
+                                <li class="dot"></li>
+
+                                <li class="dot"></li>
+                            </ul>
+                            <div id="testim-content" class="cont">
+                                <div class="active">
+                                    <div class="img">
+                                        <img
+                                            data-src="https://www.famousbirthdays.com/faces/based-tyrone-image.jpg"
+                                            alt="Big Man Tyrone - The 'Every 60 seconds' guy"
+                                            class="lazy"
+                                        />
+                                    </div>
+                                    <h2>Big Man Tyrone</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <div class="img">
+                                        <img
+                                            data-src="data:image/jpeg;base64,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"
+                                            alt="Big Chungus - in his full glory"
+                                            class="lazy"
+                                        />
+                                    </div>
+                                    <h2>Big Chungus</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <div class="img">
+                                        <img
+                                            data-src="https://www.models-resource.com/resources/big_icons/8/7888.png"
+                                            alt="Po, the Dragon Warrior from the Kung Fu Panda franchise"
+                                            class="lazy"
+                                        />
+                                    </div>
+                                    <h2>Po The Dragon Warrior</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <div class="img">
+                                        <img
+                                            data-src="https://wi.wallpapertip.com/wsimgs/26-266903_tom-and-jerry-funny-faces.jpg"
+                                            alt="Jerry from Tom and Jerry"
+                                            class="lazy"
+                                        />
+                                    </div>
+                                    <h2>Jerry</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <div class="img">
+                                        <img
+                                            data-src="https://hollywoodlife.com/wp-content/uploads/2016/02/damn-daniel-secret-behind-his-white-shoes-ftr.jpg?w=600"
+                                            alt="Daniel from the vine 'Damn Daniel'"
+                                            class="lazy"
+                                        />
+                                    </div>
+                                    <h2>Daniel</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco. Has white
+                                        Vans.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <hr />
+        <br />
+        <!-- Trending destinations section -->
+        <section>
+            <h1
+                style="text-align: center; text-decoration: underline"
+                id="trending"
+            >
+                This Month's Trending Destinations
+            </h1>
+            <div class="card-container">
+                <div class="card-box">
+                    <div class="img-box">
+                        <img
+                            data-src="./Images/img-1.jfif"
+                            alt="Beautiful sunset behind a sailing boat"
+                            class="lazy"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <div class="content-box">
+                            <h3>Some location <br /><span>asdf adsf</span></h3>
+                        </div>
+                        <a href="#" class="sci">Read More</a>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="img-box">
+                        <img
+                            data-src="./Images/img-2.jfif"
+                            alt="Beautiful waterfalls"
+                            class="lazy"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <div class="content-box">
+                            <h3>Some location <br /><span>asdf asdf</span></h3>
+                        </div>
+                        <a href="#" class="sci">Read More</a>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="img-box">
+                        <img
+                            data-src="./Images/Advent-img.png"
+                            alt="Man stands across range of mountains"
+                            class="lazy"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <div class="content-box">
+                            <h3>Some location <br /><span>asdf asdf</span></h3>
+                        </div>
+                        <a href="#" class="sci">Read More</a>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="img-box">
+                        <img
+                            data-src="./Images/img-3.jfif"
+                            alt="A quaint cot in the woods"
+                            class="lazy"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <div class="content-box">
+                            <h3>Some location <br /><span>asdf asdf</span></h3>
+                        </div>
+                        <a href="#" class="sci">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <br />
+        <!-- All destinations section -->
+        <section>
+            <h1
+                style="text-align: center; text-decoration: underline"
+                id="destinations"
+            >
+                Destinations provided by Lorem Travels
+            </h1>
+            <div class="card-container">
+                <div class="card-box">
+                    <div class="img-box">
+                        <img
+                            data-src="./Images/img-1.jfif"
+                            alt="Beautiful sunset behind a sailing boat"
+                            class="lazy"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <div class="content-box">
+                            <h3>Some location <br /><span>asdf adsf</span></h3>
+                        </div>
+                        <a href="#" class="sci">Read More</a>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="img-box">
+                        <img
+                            data-src="./Images/img-2.jfif"
+                            alt="Beautiful waterfalls"
+                            class="lazy"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <div class="content-box">
+                            <h3>Some location <br /><span>asdf asdf</span></h3>
+                        </div>
+                        <a href="#" class="sci">Read More</a>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="img-box">
+                        <img
+                            data-src="./Images/Advent-img.png"
+                            alt="Man stands across range of mountains"
+                            class="lazy"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <div class="content-box">
+                            <h3>Some location <br /><span>asdf asdf</span></h3>
+                        </div>
+                        <a href="#" class="sci">Read More</a>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="img-box">
+                        <img
+                            data-src="./Images/img-3.jfif"
+                            alt="A quaint cot in the woods"
+                            class="lazy"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <div class="content-box">
+                            <h3>Some location <br /><span>asdf asdf</span></h3>
+                        </div>
+                        <a href="#" class="sci">Read More</a>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="img-box">
+                        <img
+                            data-src="./Images/img-4.jfif"
+                            alt="Tall skyscraper in city"
+                            class="lazy"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <div class="content-box">
+                            <h3>Some location <br /><span>asdf asdf</span></h3>
+                        </div>
+                        <a href="#" class="sci">Read More</a>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="img-box">
+                        <img
+                            data-src="./Images/img-5.jfif"
+                            alt="Domed building with overgrowth"
+                            class="lazy"
+                        />
+                    </div>
+                    <div class="card-content">
+                        <div class="content-box">
+                            <h3>Some location <br /><span>asdf asdf</span></h3>
+                        </div>
+                        <a href="#" class="sci">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact section -->
+        <section id="contact">
+            <div class="contact-container">
+                <div style="text-align: center">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="contact-row">
+                    <div class="contact-column">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d143.38132514540192!2d-123.007868!3d45.408034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495143afdf86035%3A0x4ca66f326f1080f6!2s15270%20SW%20Holly%20Hill%20Rd%2C%20Hillsboro%2C%20OR%2097123%2C%20USA!5e1!3m2!1sen!2sin!4v1608968936183!5m2!1sen!2sin"
+                            width="600"
+                            height="500"
+                            frameborder="0"
+                            style="border: 0"
+                            allowfullscreen=""
+                            aria-hidden="false"
+                            tabindex="0"
+                            title="Our Location"
+                        ></iframe>
+                    </div>
+                    <div class="contact-column">
+                        <h3>For Online Booking:-</h3>
+                        <br />
+                        <form id="form-elem">
+                            <!-- Link an action document here-->
+                            <label for="fname">First Name</label>
+                            <input
+                                type="text"
+                                id="fname"
+                                autocomplete="off"
+                                name="firstname"
+                                placeholder="Your first name"
+                            />
+                            <label for="lname">Last Name</label>
+                            <input
+                                type="text"
+                                id="lname"
+                                autocomplete="off"
+                                name="lastname"
+                                placeholder="Your last name"
+                            />
+                            <label for="pkg">Package choice</label>
+                            <input
+                                type="text"
+                                id="lname"
+                                autocomplete="off"
+                                name="lastname"
+                                placeholder="Your choice of package"
+                            />
+                            <input
+                                type="submit"
+                                value="Proceed to payment →"
+                                id="submit-btn"
+                            />
+                        </form>
+                        <br />
+                        <p>
+                            You can also call us at: <br /><br />
+                            +1 123456789<br />
+                            +1 123456789<br />
+                            +1 123456789
+                        </p>
+                        <br />
+                        <p>
+                            Or E-mail us at:
+                            <a
+                                href="mailto:travelAgency@travels.com"
+                                target="_blank"
+                                id="mail-link"
+                                >travelAgency@travels.com</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer section -->
+        <footer>
+            <div class="footer">
+                <div class="contain">
+                    <div class="col">
+                        <h1>Company</h1>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>Our Services</h1>
+                        <ul>
+                            <li><a href="#trending">Trending deals</a></li>
+                            <li>
+                                <a href="#destinations">All Destinations</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h1>Support</h1>
+                        <ul>
+                            <li><a href="#contact">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col social">
+                        <h1>Social</h1>
+                        <ul>
+                            <li>
+                                <img
+                                    src="https://cdn2.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
+                                    width="32"
+                                    style="width: 32px"
+                                    alt="Twitter logo"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_3-instagram-256.png"
+                                    width="32"
+                                    style="width: 32px"
+                                    alt="Instagram logo"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_1-facebook-256.png"
+                                    width="32"
+                                    style="width: 32px"
+                                    alt="FaceBook logo"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <hr id="last-hr" />
+                <p id="credits">Made by Aditya Bhattacharya</p>
+            </div>
+        </footer>
+        <!-- Main JS -->
+        <script src="app.js"></script>
+        <!-- Social media icons from font-awesome-->
+        <script src="https://use.fontawesome.com/1744f3f671.js" defer></script>
+        <!-- Google Analytics (optional, just uncomment the script tag and the code in app.js)-->
+        <!--<script src="./assets/js/google-analytics.js" defer></script>-->
+    </body>
+</html>
