@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/AdityaBhattacharya1/Travel-Agency-Sample/blob/main/Images/Lorem-Travels-Demo.png" alt="Lorem Travels website demo" align="centre" />
+<img src="https://github.com/AdityaBhattacharya1/lorem-travels/blob/vanilla-js-ver/Images/Lorem-Travels-Demo.png" alt="Lorem Travels website demo" align="centre" />
 </p>
 
 # Introduction
