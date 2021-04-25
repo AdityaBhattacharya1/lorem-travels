@@ -20,6 +20,18 @@ function IntroSection() {
   return (
     <section className={classes.introSection}>
       <Typography className={classes.introText}>Our Speciality</Typography>
+      <Typography
+        style={{
+          display: "flex",
+          alignContent: "center",
+          justifyContent: "center",
+        }}
+      >
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur
+        excepturi modi, magnam deleniti recusandae distinctio optio magni
+        architecto ad neque. Ex laborum quas obcaecati mollitia aliquam
+        doloremque alias! Quasi, dolor.
+      </Typography>
     </section>
   )
 }
