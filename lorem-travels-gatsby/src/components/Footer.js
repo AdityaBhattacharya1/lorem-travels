@@ -1,6 +1,5 @@
 import React from "react"
 import { AppBar, Container, Toolbar, Typography } from "@material-ui/core"
-import { Link } from "gatsby"
 
 function Footer() {
   return (
@@ -13,9 +12,9 @@ function Footer() {
             style={{ fontFamily: "Poppins" }}
           >
             &copy; 2021, Lorem Travels -
-            <Link to="https://github.com/AdityaBhattacharya1">
+            <a href="https://github.com/AdityaBhattacharya1">
               Made by Aditya Bhattacharya
-            </Link>
+            </a>
           </Typography>
         </Toolbar>
       </Container>

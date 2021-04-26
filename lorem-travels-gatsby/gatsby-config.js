@@ -14,5 +14,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `styled-components`,
     `babel-plugin-styled-components`,
+    `gatsby-plugin-transition-link`,
   ],
 }

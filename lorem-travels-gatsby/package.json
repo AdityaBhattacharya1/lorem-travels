@@ -23,10 +23,13 @@
     "gatsby-plugin-material-ui": "^3.0.1",
     "gatsby-plugin-sharp": "^3.3.1",
     "gatsby-plugin-styled-components": "^4.3.0",
+    "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-source-filesystem": "^3.3.0",
     "gatsby-transformer-sharp": "^3.3.0",
+    "gsap": "^3.6.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-responsive": "^8.2.0",
     "styled-components": "^5.2.3"
   },
   "devDependencies": {

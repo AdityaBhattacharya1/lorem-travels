@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Ul = styled.ul`
   list-style: none;
@@ -32,16 +33,22 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <li>
-        <Link to="/">Home</Link>
+        <AniLink cover direction="left" bg="#A08A83" duration={2} to="/">
+          Home
+        </AniLink>
       </li>
       <li>
         <Link to="#how-it-works">How it works</Link>
       </li>
       <li>
-        <Link to="/pricing">Packages & Pricing</Link>
+        <AniLink cover direction="left" bg="#A08A83" duration={2} to="/pricing">
+          Packages & Pricing
+        </AniLink>
       </li>
       <li>
-        <Link to="/pricing/#testimonials">Testimonials</Link>
+        <Link fade to="/pricing/#testimonials">
+          Testimonials
+        </Link>
       </li>
     </Ul>
   )

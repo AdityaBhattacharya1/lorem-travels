@@ -33,7 +33,7 @@ const Navbar = () => {
     <Nav>
       <div className="logo">
         <Link to="/">
-          <Typography className="logo-text" gutterBottom paragraph="true">
+          <Typography className="logo-text" gutterBottom paragraph={true}>
             Lorem Travels.
           </Typography>
         </Link>
