@@ -1,6 +1,6 @@
 import React from "react"
 import IntroSection from "./IntroSection"
-import { introData } from "./IntroData"
+import { introData } from "../data/introData"
 
 function SectionContainer() {
   return (

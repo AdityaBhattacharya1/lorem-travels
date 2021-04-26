@@ -8,12 +8,13 @@ const Nav = styled.nav`
   width: 100%;
   height: 55px;
   background: #fff;
+  border-bottom: 2px solid #a08a83;
   z-index: 10;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   .logo {
-    padding: 20px 0 0 15px;
+    padding: 7px 0 0 15px;
     font-weight: 1000;
     font-size: 3vh;
   }

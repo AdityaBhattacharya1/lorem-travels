@@ -1,9 +1,10 @@
 import React from "react"
 import { AppBar, Container, Toolbar, Typography } from "@material-ui/core"
+import { Link } from "gatsby"
 
 function Footer() {
   return (
-    <AppBar position="static" style={{ backgroundColor: "#A08A83" }}>
+    <AppBar position="static" style={{ backgroundColor: "#FD951D" }}>
       <Container maxWidth="md">
         <Toolbar>
           <Typography
@@ -11,7 +12,10 @@ function Footer() {
             color="inherit"
             style={{ fontFamily: "Poppins" }}
           >
-            &copy; 2021, Lorem Travels - Made by Aditya Bhattacharya
+            &copy; 2021, Lorem Travels -
+            <Link to="https://github.com/AdityaBhattacharya1">
+              Made by Aditya Bhattacharya
+            </Link>
           </Typography>
         </Toolbar>
       </Container>

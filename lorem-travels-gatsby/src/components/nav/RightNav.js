@@ -41,7 +41,7 @@ const RightNav = ({ open }) => {
         <Link to="/pricing">Packages & Pricing</Link>
       </li>
       <li>
-        <Link to="#affiliates-and-testimonials">Affiliates & Testimonials</Link>
+        <Link to="/pricing/#testimonials">Testimonials</Link>
       </li>
     </Ul>
   )
