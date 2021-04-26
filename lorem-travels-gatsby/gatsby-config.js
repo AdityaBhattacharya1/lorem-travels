@@ -21,6 +21,7 @@ module.exports = {
         precachePages: [`/`, `/pricing/`],
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
   siteMetadata: {
     title: "Lorem Travels",
