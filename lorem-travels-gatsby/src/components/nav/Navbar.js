@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Burger from "./Burger"
 import { Link } from "gatsby"
+import { Typography } from "@material-ui/core"
 
 const Nav = styled.nav`
   width: 100%;
@@ -30,8 +31,10 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        <Link className="logo-text" to="/">
-          Lorem Travels.
+        <Link to="/">
+          <Typography className="logo-text" gutterBottom paragraph="true">
+            Lorem Travels.
+          </Typography>
         </Link>
       </div>
       <Burger />
