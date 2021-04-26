@@ -9,6 +9,8 @@ import {
   createMuiTheme,
 } from "@material-ui/core/styles"
 import SectionContainer from "../components/homeDesc/SectionContainer"
+import { Link } from "gatsby"
+import Layout from "../components/Layout"
 
 const theme = createMuiTheme({
   palette: {
@@ -21,27 +23,32 @@ const theme = createMuiTheme({
 const useStyles = makeStyles({
   heading: {
     padding: "150px 0px 0px 80px",
-    fontSize: "5rem",
     fontWeight: 700,
     fontFamily: "Merriweather",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "5rem",
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "2rem",
+    },
   },
   intro: {
     paddingLeft: "80px",
-    color: "#BEABA4",
+    color: "#665D59",
   },
   heroBtn: {
     margin: "50px 80px",
     padding: "20px 45px",
     color: "#fff",
     borderRadius: "13px",
+    fontFamily: "Poppins",
   },
 })
 
 export default function Home() {
   const classes = useStyles()
   return (
-    <>
-      <Navbar />
+    <Layout>
       <Typography
         variant="h1"
         gutterBottom
@@ -64,15 +71,18 @@ export default function Home() {
           // Add click event here
           onClick={() => {}}
         >
-          <Typography style={{ fontSize: 12 }}>Learn more</Typography>
+          <Link style={{ fontSize: 12 }} to="#">
+            Tour Packages
+          </Link>
         </Button>
       </ThemeProvider>
 
       {/* TODO: make this responsive by adding media queries */}
       {/* Note to self: it was a horror dealing with this plugin. If media queries don't work, use gatsby-image plugin instead. */}
+
       <StaticImage
         src="../images/house-img.webp"
-        alt=""
+        alt="Home image"
         style={{
           maxHeight: "100%",
           maxWidth: "100%",
@@ -82,8 +92,11 @@ export default function Home() {
           zIndex: -1,
           opacity: 0.7,
         }}
+        layout="constrained"
+        breakpoints={[480, 750, 1080, 1366, 1920]}
       />
+
       <SectionContainer />
-    </>
+    </Layout>
   )
 }
