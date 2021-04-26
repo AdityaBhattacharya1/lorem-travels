@@ -15,6 +15,12 @@ module.exports = {
     `styled-components`,
     `babel-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/`, `/pricing/`],
+      },
+    },
   ],
   siteMetadata: {
     title: "Lorem Travels",
