@@ -22,14 +22,23 @@ const useStyles = makeStyles({
     fontFamily: "Merriweather",
     [theme.breakpoints.down("md")]: {
       fontSize: "5rem",
+      padding: "100px 0px 0px 20px",
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: "2rem",
+      padding: "90px 0px 0px 20px",
     },
+    wordBreak: "break-word",
   },
   intro: {
     paddingLeft: "80px",
     color: "#665D59",
+    [theme.breakpoints.down("md")]: {
+      paddingLeft: "20px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      paddingLeft: "20px",
+    },
   },
   heroBtn: {
     margin: "50px 80px",
@@ -50,8 +59,9 @@ function Heading() {
         align="left"
         className={classes.heading}
       >
-        Welcome to <br /> Lorem Travels
+        Welcome to Lorem Travels
       </Typography>
+      )
       <Typography variant="h6" className={classes.intro}>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
         Perferendis veniam nulla autem sit, in necessitatibus <br /> reiciendis

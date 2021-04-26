@@ -10,7 +10,7 @@ import Heading from "../components/homeDesc/Heading"
 import { useMediaQuery } from "react-responsive"
 
 export default function Home() {
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" })
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1200px)" })
   return (
     <Layout>
       <Heading />

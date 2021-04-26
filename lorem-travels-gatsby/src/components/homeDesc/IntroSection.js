@@ -19,7 +19,7 @@ const IntroText = styled.p`
   color: #04295c;
   flex: 50%;
   padding-top: 50px;
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 820px) {
     padding-left: 10px;
   }
 `
