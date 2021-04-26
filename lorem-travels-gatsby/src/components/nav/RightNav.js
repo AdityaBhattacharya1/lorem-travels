@@ -38,7 +38,7 @@ const RightNav = ({ open }) => {
         </AniLink>
       </li>
       <li>
-        <Link to="#how-it-works">How it works</Link>
+        <Link to="/#how-it-works">How it works</Link>
       </li>
       <li>
         <AniLink cover direction="left" bg="#A08A83" duration={2} to="/pricing">
