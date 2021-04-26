@@ -46,9 +46,7 @@ const RightNav = ({ open }) => {
         </AniLink>
       </li>
       <li>
-        <Link fade to="/pricing/#testimonials">
-          Testimonials
-        </Link>
+        <Link to="/pricing/#testimonials">Testimonials</Link>
       </li>
     </Ul>
   )

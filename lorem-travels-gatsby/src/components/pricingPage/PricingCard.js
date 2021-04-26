@@ -73,9 +73,9 @@ function PricingCard({ title, details, price, imgLink }) {
             {price} - Purchase
           </Button>
           <Button size="small" color="primary">
-            <Link to={imgLink} style={{ color: "#04295c" }}>
+            <a href={imgLink} style={{ color: "#04295c" }}>
               View Image
-            </Link>
+            </a>
           </Button>
         </ThemeProvider>
       </CardActions>

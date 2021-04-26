@@ -16,4 +16,8 @@ module.exports = {
     `babel-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
   ],
+  siteMetadata: {
+    title: "Lorem Travels",
+    description: "Lorem Travels - A sample travel agency",
+  },
 }

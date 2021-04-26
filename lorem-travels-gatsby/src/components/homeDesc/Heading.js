@@ -38,6 +38,7 @@ const useStyles = makeStyles({
     },
     [theme.breakpoints.down("sm")]: {
       paddingLeft: "20px",
+      wordBreak: "break-word",
     },
   },
   heroBtn: {
@@ -46,6 +47,9 @@ const useStyles = makeStyles({
     color: "#fff",
     borderRadius: "13px",
     fontFamily: "Poppins",
+    [theme.breakpoints.down("md")]: {
+      margin: "50px 20px",
+    },
   },
 })
 
@@ -61,7 +65,7 @@ function Heading() {
       >
         Welcome to Lorem Travels
       </Typography>
-      )
+
       <Typography variant="h6" className={classes.intro}>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
         Perferendis veniam nulla autem sit, in necessitatibus <br /> reiciendis
@@ -74,7 +78,7 @@ function Heading() {
           color="primary"
           size="large"
         >
-          <Link style={{ fontSize: 12 }} to="#">
+          <Link style={{ fontSize: 12 }} to="/pricing">
             Tour Packages
           </Link>
         </Button>

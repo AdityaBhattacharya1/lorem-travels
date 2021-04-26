@@ -10,8 +10,6 @@ const useStyles = makeStyles({
 
 // 1. Gatsby styled component plugin seems to have a problem
 // with Typography and other material-ui components
-// 2. Can't use media queries with material-ui in gatsby (causes FOUT in build)
-// Hence, going with the default p tag
 const IntroText = styled.p`
   padding: 150px 0px 0px 80px;
   font-size: 3rem;
