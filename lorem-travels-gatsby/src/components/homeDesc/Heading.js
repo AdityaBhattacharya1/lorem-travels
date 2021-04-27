@@ -6,6 +6,7 @@ import {
 } from "@material-ui/core/styles"
 import { Typography, Button } from "@material-ui/core"
 import { Link } from "gatsby"
+import { headerData } from "../data/introData"
 
 const theme = createMuiTheme({
   palette: {
@@ -32,13 +33,15 @@ const useStyles = makeStyles({
   },
   intro: {
     paddingLeft: "80px",
+    paddingRight: "10px",
     color: "#665D59",
+    width: "650px",
     [theme.breakpoints.down("md")]: {
       paddingLeft: "20px",
+      width: "inherit",
     },
     [theme.breakpoints.down("sm")]: {
       paddingLeft: "20px",
-      wordBreak: "break-word",
     },
   },
   heroBtn: {
@@ -63,13 +66,11 @@ function Heading() {
         align="left"
         className={classes.heading}
       >
-        Welcome to Lorem Travels
+        {headerData.title}
       </Typography>
 
       <Typography variant="h6" className={classes.intro}>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
-        Perferendis veniam nulla autem sit, in necessitatibus <br /> reiciendis
-        nostrum doloribus ipsa iste?
+        {headerData.desc}
       </Typography>
       <ThemeProvider theme={theme}>
         <Button

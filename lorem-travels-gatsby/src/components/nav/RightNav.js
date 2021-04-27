@@ -27,6 +27,9 @@ const Ul = styled.ul`
     align-content: center;
   }
   z-index: 10 !important;
+  @media screen and (min-height: 1000px) {
+    height: 100%;
+  }
 `
 
 const RightNav = ({ open }) => {
