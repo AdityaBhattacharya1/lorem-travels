@@ -23,5 +23,7 @@ module.exports = {
   siteMetadata: {
     title: "Lorem Travels",
     description: "Lorem Travels - A sample travel agency",
+    author: "Aditya Bhattacharya",
+    siteURL: "http://localhost:8000",
   },
 }
