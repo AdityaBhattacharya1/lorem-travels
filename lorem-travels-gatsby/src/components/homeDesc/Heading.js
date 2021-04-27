@@ -5,8 +5,8 @@ import {
   createMuiTheme,
 } from "@material-ui/core/styles"
 import { Typography, Button } from "@material-ui/core"
-import { Link } from "gatsby"
 import { headerData } from "../data/introData"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const theme = createMuiTheme({
   palette: {
@@ -79,9 +79,16 @@ function Heading() {
           color="primary"
           size="large"
         >
-          <Link style={{ fontSize: 12 }} to="/pricing">
+          <AniLink
+            cover
+            direction="left"
+            bg="#A08A83"
+            duration={2}
+            style={{ fontSize: 12 }}
+            to="/pricing"
+          >
             Tour Packages
-          </Link>
+          </AniLink>
         </Button>
       </ThemeProvider>
     </>

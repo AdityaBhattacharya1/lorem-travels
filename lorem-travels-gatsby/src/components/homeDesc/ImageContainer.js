@@ -8,7 +8,7 @@ function ImageContainer() {
     <div>
       {!isTabletOrMobile ? (
         <StaticImage
-          src="../images/house-img.webp"
+          src="../../images/house-img.webp"
           alt="Home image"
           style={{
             maxHeight: "100%",
