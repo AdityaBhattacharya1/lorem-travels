@@ -8,10 +8,10 @@ function SectionContainer() {
       <div id="how-it-works"></div>
       {introData.map(({ id, title, text }) => {
         return (
-          <React.Fragment key={id}>
+          <div key={id}>
             <IntroSection title={title} text={text} />
             <hr />
-          </React.Fragment>
+          </div>
         )
       })}
     </div>

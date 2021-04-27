@@ -27,7 +27,6 @@ const IntroSectionContainer = styled.section`
   display: flex;
   padding-bottom: 40px;
   padding-top: 20px;
-
   @media screen and (max-width: 780px) {
     display: flex;
     flex-direction: column;
