@@ -36,6 +36,7 @@ function Layout({ children }) {
           property="twitter:image:alt"
           content="Lorem Travels - A fake travel agency"
         />
+        <title>Lorem Travels</title>
       </Helmet>
       <Navbar />
       {children}
