@@ -13,12 +13,15 @@
 -   It is a sample travel agency website and does not refer to any particular agency and/or company in real life. Hence, the generic title **'Lorem Travels'**
 -   The webapp consists of 2 pages (routes: `/` & `/pricing`)
 -   Statically generated (_SSG_)
+-   Works Offline (requires the pages to be loaded before at least once, in order to facilitate browser caching)
+-   Mobile Responsive
 
 # Tech Stack:
 
 -   React
 -   Gatsby
 -   Webpack (default bundler)
+-   Material-UI and styled-components
 
 # Installation and Running
 

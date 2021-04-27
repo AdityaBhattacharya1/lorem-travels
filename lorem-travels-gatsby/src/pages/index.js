@@ -25,7 +25,7 @@ export default function Home() {
             top: "10%",
             right: "0%",
             zIndex: -1,
-            opacity: 0.7,
+            opacity: 1,
           }}
         />
       ) : null}
