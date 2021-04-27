@@ -73,23 +73,23 @@ function Heading() {
         {headerData.desc}
       </Typography>
       <ThemeProvider theme={theme}>
-        <Button
-          className={classes.heroBtn}
-          variant="contained"
-          color="primary"
-          size="large"
+        <AniLink
+          cover
+          direction="left"
+          bg="#A08A83"
+          duration={2}
+          style={{ fontSize: 12 }}
+          to="/pricing"
         >
-          <AniLink
-            cover
-            direction="left"
-            bg="#A08A83"
-            duration={2}
-            style={{ fontSize: 12 }}
-            to="/pricing"
+          <Button
+            className={classes.heroBtn}
+            variant="contained"
+            color="primary"
+            size="large"
           >
             Tour Packages
-          </AniLink>
-        </Button>
+          </Button>
+        </AniLink>
       </ThemeProvider>
     </>
   )
