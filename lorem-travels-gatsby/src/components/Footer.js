@@ -1,6 +1,12 @@
 import React from "react"
 import { AppBar, Container, Toolbar, Typography } from "@material-ui/core"
 import { makeStyles, createMuiTheme } from "@material-ui/core/styles"
+import styled from "styled-components"
+import GitHubIcon from "@material-ui/icons/GitHub"
+
+const StyledLink = styled.a`
+  border-bottom: 2px dotted white;
+`
 
 const theme = createMuiTheme({})
 
@@ -28,9 +34,13 @@ function Footer() {
             className={classes.footerText}
           >
             &copy; 2021, Lorem Travels -
-            <a href="https://github.com/AdityaBhattacharya1">
+            <StyledLink
+              href="https://github.com/AdityaBhattacharya1"
+              target="_blank"
+              rel="noopener"
+            >
               Made by Aditya Bhattacharya
-            </a>
+            </StyledLink>
           </Typography>
         </Toolbar>
       </Container>
