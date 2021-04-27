@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`, `/pricing/`],
+        precachePages: [`/*`],
         workboxConfig: {
           importWorkboxFrom: `cdn`,
         },
