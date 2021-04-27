@@ -67,7 +67,7 @@ Edit the key-value pairs to obtain the desired output. <br />
 
 ## Images
 
--   _Unsplash_[https://unsplash.com]
+-   _Unsplash_ - [Unsplash](https://unsplash.com)
 
 # License: MIT
 
