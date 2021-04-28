@@ -2,7 +2,6 @@ import React from "react"
 import { AppBar, Container, Toolbar, Typography } from "@material-ui/core"
 import { makeStyles, createMuiTheme } from "@material-ui/core/styles"
 import styled from "styled-components"
-import GitHubIcon from "@material-ui/icons/GitHub"
 
 const StyledLink = styled.a`
   border-bottom: 2px dotted white;
