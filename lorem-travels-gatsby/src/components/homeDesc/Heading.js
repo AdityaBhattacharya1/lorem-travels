@@ -18,7 +18,8 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
   heading: {
-    padding: "150px 0px 0px 80px",
+    padding: "150px 10px 0px 80px",
+    marginRight: "400px",
     fontWeight: 700,
     fontFamily: "Merriweather",
     [theme.breakpoints.down("md")]: {

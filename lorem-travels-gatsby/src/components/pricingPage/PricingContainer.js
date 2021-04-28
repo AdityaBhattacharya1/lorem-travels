@@ -57,7 +57,7 @@ function PricingContainer() {
       <Grid container className={classes.gridContainer} justify="space-around">
         {packages.map(({ frontmatter, id }) => {
           return (
-            <Grid item xs={12} sm={6} md={4} key={id}>
+            <Grid item xs={12} sm={6} md={4} lg={2} xl={1} key={id}>
               <AniLink
                 cover
                 direction="left"
