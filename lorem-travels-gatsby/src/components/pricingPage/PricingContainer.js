@@ -3,8 +3,9 @@ import PricingCard from "./PricingCard"
 import Layout from "../Layout"
 import { makeStyles, createMuiTheme } from "@material-ui/core/styles"
 import { Typography, Grid } from "@material-ui/core"
-import { pricingData } from "../data/pricingData"
 import AccordionContainer from "../testimonialsAccordian/AccordionContainer"
+import { useStaticQuery, graphql } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const theme = createMuiTheme({})
 
@@ -30,6 +31,23 @@ const useStyles = makeStyles({
 })
 
 function PricingContainer() {
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            slug
+            title
+            thumb
+            price
+            desc
+          }
+          id
+        }
+      }
+    }
+  `)
+  const packages = data.allMarkdownRemark.nodes
   const classes = useStyles()
   return (
     <Layout>
@@ -37,15 +55,23 @@ function PricingContainer() {
         Our Packages
       </Typography>
       <Grid container className={classes.gridContainer} justify="space-around">
-        {pricingData.map(({ id, title, details, price, imgLink }) => {
+        {packages.map(({ frontmatter, id }) => {
           return (
             <Grid item xs={12} sm={6} md={4} key={id}>
-              <PricingCard
-                title={title}
-                details={details}
-                price={price}
-                imgLink={imgLink}
-              />
+              <AniLink
+                cover
+                direction="left"
+                bg="#A08A83"
+                duration={1}
+                to={"/pricing/" + frontmatter.slug}
+              >
+                <PricingCard
+                  title={frontmatter.title}
+                  details={frontmatter.desc}
+                  price={frontmatter.price}
+                  imgLink={frontmatter.thumb}
+                />
+              </AniLink>
             </Grid>
           )
         })}

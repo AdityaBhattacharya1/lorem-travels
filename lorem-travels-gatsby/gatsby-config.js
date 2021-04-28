@@ -15,15 +15,22 @@ module.exports = {
       options: {
         precachePages: [`/*`],
         workboxConfig: {
-          importWorkboxFrom: `cdn`,
+          importWorkboxFrom: `cdn`, // default settings of workbox, without making an sw.js file
         },
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `packages`,
+        path: `${__dirname}/src/packages/`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
   siteMetadata: {
     title: "Lorem Travels",
     description: "Lorem Travels - A sample travel agency",
     author: "Aditya Bhattacharya",
-    siteURL: "http://localhost:8000",
   },
 }

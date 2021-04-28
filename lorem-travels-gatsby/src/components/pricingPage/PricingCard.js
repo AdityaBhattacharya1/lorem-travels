@@ -70,11 +70,18 @@ function PricingCard({ title, details, price, imgLink }) {
       <CardActions>
         <ThemeProvider theme={theme}>
           <Button size="small" color="primary" style={{ fontWeight: 600 }}>
-            {price} - Purchase
+            {price}
           </Button>
           <Button size="small" color="primary">
-            <a href={imgLink} style={{ color: "#04295c" }}>
-              View Image
+            <a
+              href={imgLink}
+              style={{
+                color: "#04295c",
+                fontFamily: "Poppins",
+                fontWeight: 600,
+              }}
+            >
+              Read More
             </a>
           </Button>
         </ThemeProvider>
