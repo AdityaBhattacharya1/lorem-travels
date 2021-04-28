@@ -11,10 +11,10 @@
 # About The Website
 
 -   It is a sample travel agency website and does not refer to any particular agency and/or company in real life. Hence, the generic title **'Lorem Travels'**
--   The webapp consists of 2 pages (routes: `/` & `/pricing`)
+-   The webapp consists of multiple pages (routes: `/` & `/pricing` as well as the routes for the different packages; following the format `/pricing/{slug}`)
 -   Statically generated (_SSG_)
 -   Works Offline (requires the pages to be loaded before at least once, in order to facilitate browser caching)
--   Mobile Responsive
+-   Mobile Responsive and page transitions
 
 # Tech Stack:
 
@@ -48,15 +48,26 @@ cd .\lorem-travels-gatsby\src\components\data
 // To edit intro data:
 cd introData.js
 
-// To edit pricing data:
-cd pricingData.js
-
 // To edit accordion data:
 cd accordionData.js
 ```
 
 There, you will find the data in the form of a JS object. <br />
 Edit the key-value pairs to obtain the desired output. <br />
+
+## To Edit Pricing Data and Create New Pages For the Respective Packages
+
+-   Go to the `packages` directory (path from main directory: `./lorem-travels-gatsby/src/packages`)
+-   Add a new .md file (the file name does not matter)
+-   Copy the data present within the double hyphens (--) from the pre made .md files (**Important step**)
+-   Edit the `title`, `slug`, `desc`, `price` and `thumb`\*
+-   After that, leave a few lines for good measure and edit the document as you wish. Ensure that the text follows markdown syntax.
+-   And, you are done. You can now find a new card on the pricing page and if you click on it, you should be redirected to a new page
+
+(\*) **What Do These Mean?**
+
+-   [slug](https://developer.mozilla.org/en-US/docs/Glossary/Slug)
+-   `thumb` refers to the thumbnail or image which is displayed on the cards as well as the respective package website. **Adding the URL to the image is required, or you might incur an error.**
 
 # Live Demo
 
@@ -66,7 +77,7 @@ Edit the key-value pairs to obtain the desired output. <br />
 
 ## Hero page design
 
--   _Agum Satria Prakoso_ - [Link to original design on Dribbble](https://dribbble.com/shots/15306311-Travel-Agency-Web-Exploration-Kuyjalan)
+-   Inspired by _Agum Satria Prakoso_ - [Link to original design on Dribbble](https://dribbble.com/shots/15306311-Travel-Agency-Web-Exploration-Kuyjalan)
 
 ## Images
 
