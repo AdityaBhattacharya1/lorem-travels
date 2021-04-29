@@ -1,6 +1,6 @@
-// TODO: add individual "read more" pages for each package which reads data from a js file
-
 import React from "react"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 import {
   makeStyles,
   ThemeProvider,
@@ -15,7 +15,7 @@ import {
   Button,
   Typography,
 } from "@material-ui/core"
-import { Link } from "gatsby"
+import { navigate } from "gatsby"
 
 const theme = createMuiTheme({
   palette: {
@@ -37,7 +37,7 @@ const useStyles = makeStyles({
   },
 })
 
-function PricingCard({ title, details, price, imgLink }) {
+function PricingCard({ title, details, price, imgLink, articleLink }) {
   const classes = useStyles()
 
   return (
@@ -70,11 +70,19 @@ function PricingCard({ title, details, price, imgLink }) {
       <CardActions>
         <ThemeProvider theme={theme}>
           <Button size="small" color="primary" style={{ fontWeight: 600 }}>
-            {price}
+            {price} - Purchase
           </Button>
-          <Button size="small" color="primary">
-            <a
-              href={imgLink}
+          <Button
+            size="small"
+            color="primary"
+            onClick={e => navigate("/pricing" + articleLink)}
+          >
+            <AniLink
+              to={articleLink}
+              cover
+              direction="left"
+              bg="#A08A83"
+              duration={1}
               style={{
                 color: "#04295c",
                 fontFamily: "Poppins",
@@ -82,7 +90,7 @@ function PricingCard({ title, details, price, imgLink }) {
               }}
             >
               Read More
-            </a>
+            </AniLink>
           </Button>
         </ThemeProvider>
       </CardActions>

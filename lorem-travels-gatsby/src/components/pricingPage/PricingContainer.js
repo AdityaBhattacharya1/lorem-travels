@@ -5,7 +5,6 @@ import { makeStyles, createMuiTheme } from "@material-ui/core/styles"
 import { Typography, Grid } from "@material-ui/core"
 import AccordionContainer from "../testimonialsAccordian/AccordionContainer"
 import { useStaticQuery, graphql } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const theme = createMuiTheme({})
 
@@ -58,20 +57,21 @@ function PricingContainer() {
         {packages.map(({ frontmatter, id }) => {
           return (
             <Grid item xs={12} sm={6} md={4} xl={2} key={id}>
-              <AniLink
+              {/* <AniLink
                 cover
                 direction="left"
                 bg="#A08A83"
                 duration={1}
                 to={"/pricing/" + frontmatter.slug}
-              >
-                <PricingCard
-                  title={frontmatter.title}
-                  details={frontmatter.desc}
-                  price={frontmatter.price}
-                  imgLink={frontmatter.thumb}
-                />
-              </AniLink>
+              > */}
+              <PricingCard
+                title={frontmatter.title}
+                details={frontmatter.desc}
+                price={frontmatter.price}
+                imgLink={frontmatter.thumb}
+                articleLink={"/pricing/" + frontmatter.slug}
+              />
+              {/* </AniLink> */}
             </Grid>
           )
         })}
