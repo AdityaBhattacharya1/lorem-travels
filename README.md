@@ -14,14 +14,16 @@
 -   The webapp consists of multiple pages (routes: `/` & `/pricing` as well as the routes for the different packages; following the format `/pricing/{slug}`)
 -   Statically generated (_SSG_)
 -   Works Offline (requires the pages to be loaded before at least once, in order to facilitate browser caching)
+-   Can act like an e-commerce store
 -   Mobile Responsive and page transitions
 
-# Tech Stack:
+# Technologies Used:
 
 -   React
 -   Gatsby
 -   Webpack (default bundler)
 -   Material-UI and styled-components
+-   Stripe API
 
 # Installation and Running
 
@@ -60,14 +62,21 @@ Edit the key-value pairs to obtain the desired output. <br />
 -   Go to the `packages` directory (path from main directory: `./lorem-travels-gatsby/src/packages`)
 -   Add a new .md file (the file name does not matter)
 -   Copy the data present within the double hyphens (--) from the pre made .md files (**Important step**)
--   Edit the `title`, `slug`, `desc`, `price` and `thumb`\*
+-   Edit the `title`, `slug`, `desc`, `price`, `priceURL`\* and `thumb`\*\*
 -   After that, leave a few lines for good measure and edit the document as you wish. Ensure that the text follows markdown syntax.
 -   And, you are done. You can now find a new card on the pricing page and if you click on it, you should be redirected to a new page
 
-(\*) **What Do These Mean?**
+(\*) **priceURL is necessary for accepting payment. Go to next section for more details about making the website into an e-commerce store**
+(\*\*) **What Do These Mean?**
 
 -   [slug](https://developer.mozilla.org/en-US/docs/Glossary/Slug)
 -   `thumb` refers to the thumbnail or image which is displayed on the cards as well as the respective package website. **Adding the URL to the image is required, or you might incur an error.**
+
+## To Use E-Commerce Functionalities
+
+To add your own products and be able to accept payment via Stripe API, follow these steps: <br />
+
+-
 
 # Live Demo
 
