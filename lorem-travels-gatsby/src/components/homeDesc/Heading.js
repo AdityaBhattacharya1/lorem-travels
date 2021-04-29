@@ -25,10 +25,12 @@ const useStyles = makeStyles({
     [theme.breakpoints.down("md")]: {
       fontSize: "5rem",
       padding: "100px 0px 0px 20px",
+      marginRight: 0,
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: "2rem",
       padding: "90px 0px 0px 20px",
+      marginRight: 0,
     },
     wordBreak: "break-word",
   },
