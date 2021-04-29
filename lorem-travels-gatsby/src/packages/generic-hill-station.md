@@ -3,6 +3,7 @@ title: Generic Hill Station
 slug: generic-hill-station
 thumb: https://images.unsplash.com/photo-1475061310011-970c2da77d72?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80
 price: $299.99
+priceURL: price_1IlVRcSIQ5tys5Ih0QMuQi4k
 desc: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis veniam nulla autem sit, in necessitatibus reiciendis nostrum doloribus ipsa iste?
 ---
 

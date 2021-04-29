@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useState } from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import getStripe from "../../utils/stripejs"
 
 import {
   makeStyles,
@@ -15,7 +16,6 @@ import {
   Button,
   Typography,
 } from "@material-ui/core"
-import { navigate } from "gatsby"
 
 const theme = createMuiTheme({
   palette: {
@@ -37,8 +37,34 @@ const useStyles = makeStyles({
   },
 })
 
-function PricingCard({ title, details, price, imgLink, articleLink }) {
+function PricingCard({
+  title,
+  details,
+  price,
+  imgLink,
+  articleLink,
+  priceURL,
+}) {
   const classes = useStyles()
+  const [loading, setLoading] = useState(false)
+
+  const redirectToCheckout = async event => {
+    event.preventDefault()
+    setLoading(true)
+
+    const stripe = await getStripe()
+    const { error } = await stripe.redirectToCheckout({
+      mode: "payment",
+      lineItems: [{ price: priceURL, quantity: 1 }],
+      successUrl: process.env.SUCCESS_URL,
+      cancelUrl: process.env.CANCEL_URL,
+    })
+
+    if (error) {
+      console.warn("Error:", error)
+      setLoading(false)
+    }
+  }
 
   return (
     <Card className={classes.root}>
@@ -69,14 +95,16 @@ function PricingCard({ title, details, price, imgLink, articleLink }) {
       </CardActionArea>
       <CardActions>
         <ThemeProvider theme={theme}>
-          <Button size="small" color="primary" style={{ fontWeight: 600 }}>
-            {price} - Purchase
-          </Button>
           <Button
             size="small"
             color="primary"
-            onClick={e => navigate("/pricing" + articleLink)}
+            disabled={loading}
+            style={{ fontWeight: 600 }}
+            onClick={redirectToCheckout}
           >
+            {price} - Purchase
+          </Button>
+          <Button size="small" color="primary">
             <AniLink
               to={articleLink}
               cover

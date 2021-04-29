@@ -3,6 +3,7 @@ title: Canyons
 slug: canyons
 thumb: https://images.unsplash.com/photo-1501596425317-bcaacf68fece?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80
 price: $499.99
+priceURL: price_1IlTVqSIQ5tys5IhfXIxGLps
 desc: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis veniam nulla autem sit, in necessitatibus reiciendis nostrum doloribus ipsa iste?
 ---
 

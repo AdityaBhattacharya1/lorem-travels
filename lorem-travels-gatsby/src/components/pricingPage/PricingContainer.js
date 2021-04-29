@@ -40,6 +40,7 @@ function PricingContainer() {
             thumb
             price
             desc
+            priceURL
           }
           id
         }
@@ -57,21 +58,14 @@ function PricingContainer() {
         {packages.map(({ frontmatter, id }) => {
           return (
             <Grid item xs={12} sm={6} md={4} xl={2} key={id}>
-              {/* <AniLink
-                cover
-                direction="left"
-                bg="#A08A83"
-                duration={1}
-                to={"/pricing/" + frontmatter.slug}
-              > */}
               <PricingCard
                 title={frontmatter.title}
                 details={frontmatter.desc}
                 price={frontmatter.price}
                 imgLink={frontmatter.thumb}
-                articleLink={"/pricing/" + frontmatter.slug}
+                articleLink={frontmatter.slug}
+                priceURL={frontmatter.priceURL}
               />
-              {/* </AniLink> */}
             </Grid>
           )
         })}
