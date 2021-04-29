@@ -56,8 +56,9 @@ function PricingCard({
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
       lineItems: [{ price: priceURL, quantity: 1 }],
-      successUrl: process.env.SUCCESS_URL,
-      cancelUrl: process.env.CANCEL_URL,
+      successUrl: process.env.SUCCESS_URL || `https://lorem-travels.vercel.app`,
+      cancelUrl:
+        process.env.CANCEL_URL || `https://lorem-travels.vercel.app/pricing`,
     })
 
     if (error) {
