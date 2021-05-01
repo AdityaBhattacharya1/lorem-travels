@@ -1,7 +1,5 @@
-import React, { useState } from "react"
+import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import getStripe from "../../utils/stripejs"
-
 import {
   makeStyles,
   ThemeProvider,
@@ -16,6 +14,8 @@ import {
   Button,
   Typography,
 } from "@material-ui/core"
+import PricingBtn from "./PricingBtn"
+import ShoppingBasketRoundedIcon from "@material-ui/icons/ShoppingBasketRounded"
 
 const theme = createMuiTheme({
   palette: {
@@ -46,27 +46,6 @@ function PricingCard({
   priceURL,
 }) {
   const classes = useStyles()
-  const [loading, setLoading] = useState(false)
-
-  const redirectToCheckout = async event => {
-    event.preventDefault()
-    setLoading(true)
-
-    const stripe = await getStripe()
-    const { error } = await stripe.redirectToCheckout({
-      mode: "payment",
-      lineItems: [{ price: priceURL, quantity: 1 }],
-      successUrl: process.env.SUCCESS_URL || `https://lorem-travels.vercel.app`,
-      cancelUrl:
-        process.env.CANCEL_URL || `https://lorem-travels.vercel.app/pricing`,
-    })
-
-    if (error) {
-      console.warn("Error:", error)
-      setLoading(false)
-    }
-  }
-
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -96,15 +75,12 @@ function PricingCard({
       </CardActionArea>
       <CardActions>
         <ThemeProvider theme={theme}>
-          <Button
-            size="small"
-            color="primary"
-            disabled={loading}
-            style={{ fontWeight: 600 }}
-            onClick={redirectToCheckout}
-          >
-            {price} - Purchase
-          </Button>
+          <PricingBtn
+            priceURL={priceURL}
+            price={price}
+            size={4}
+            icon={<ShoppingBasketRoundedIcon />}
+          />
           <Button size="small" color="primary">
             <AniLink
               to={articleLink}
