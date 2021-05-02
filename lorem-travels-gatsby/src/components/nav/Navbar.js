@@ -30,7 +30,7 @@ const Nav = styled.nav`
 
 const Navbar = () => {
   return (
-    <Nav>
+    <Nav role="navigation">
       <div className="logo">
         <Link to="/">
           <Typography className="logo-text" gutterBottom paragraph={true}>

@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 function ImageContainer() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1279px)" })
   return (
-    <div>
+    <aside role="complementary">
       {!isTabletOrMobile ? (
         <StaticImage
           src="../../images/house-img.webp"
@@ -24,7 +24,7 @@ function ImageContainer() {
       ) : (
         <div></div>
       )}
-    </div>
+    </aside>
   )
 }
 

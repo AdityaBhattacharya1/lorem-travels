@@ -45,6 +45,7 @@ export default function ProjectDetails({ data }) {
   const { html } = data.markdownRemark
   const { title, price, thumb, priceURL } = data.markdownRemark.frontmatter
 
+  // defined inside component because of use of local variable `thumb`
   const StyledDiv = styled.div`
     font-size: 2rem;
     color: white;

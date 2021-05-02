@@ -81,7 +81,7 @@ function Heading() {
           variant="contained"
           color="primary"
           size="large"
-          onClick={e => navigate("/pricing")}
+          onClick={_ => navigate("/pricing")}
         >
           Tour Packages
         </Button>

@@ -14,6 +14,7 @@ export default function Home() {
           we return an empty div. If null, react fragment or undefined is returned, then there would be no component
           to style and the two sections would clash on smaller screens.
       */}
+
       <ImageContainer />
       <SectionContainer />
     </Layout>

@@ -37,6 +37,8 @@ function Footer() {
               href="https://github.com/AdityaBhattacharya1"
               target="_blank"
               rel="noopener"
+              aria-label="Link to the author's (Aditya Bhattacharya's) Github page"
+              role="contentinfo"
             >
               Made by Aditya Bhattacharya
             </StyledLink>
