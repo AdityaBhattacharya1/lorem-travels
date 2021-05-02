@@ -60,4 +60,4 @@ npx serve
 
 # Live Demo
 
--   [Lorem-Travels](https://lorem-travels.netlify.app/)
+-   [Lorem-Travels](https://vanilla-lorem-travels.netlify.app/)
