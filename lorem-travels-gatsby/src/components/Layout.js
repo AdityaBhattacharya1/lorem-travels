@@ -173,7 +173,7 @@ function Layout({ children }) {
           media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
         />
       </Helmet>
-      <header>
+      <header role="banner">
         <Navbar />
       </header>
       <main role="main">{children}</main>

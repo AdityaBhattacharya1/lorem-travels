@@ -4,7 +4,7 @@ import { introData } from "../data/introData"
 
 function SectionContainer() {
   return (
-    <section>
+    <section role="contentinfo">
       <div id="how-it-works"></div>
       {introData.map(({ id, title, text }) => {
         return (
