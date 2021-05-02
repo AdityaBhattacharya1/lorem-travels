@@ -24,7 +24,7 @@ export default function AccordionTemplate({ title, details }) {
   const classes = useStyles()
 
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <Accordion style={{ backgroundColor: "#FEF5DD" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -44,6 +44,6 @@ export default function AccordionTemplate({ title, details }) {
           </Typography>
         </AccordionDetails>
       </Accordion>
-    </div>
+    </section>
   )
 }

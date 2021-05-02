@@ -4,17 +4,17 @@ import { introData } from "../data/introData"
 
 function SectionContainer() {
   return (
-    <div>
+    <section>
       <div id="how-it-works"></div>
       {introData.map(({ id, title, text }) => {
         return (
-          <div key={id}>
+          <React.Fragment key={id}>
             <IntroSection title={title} text={text} />
             <hr />
-          </div>
+          </React.Fragment>
         )
       })}
-    </div>
+    </section>
   )
 }
 

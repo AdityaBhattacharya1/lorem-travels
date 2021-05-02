@@ -46,7 +46,7 @@ export default function ProjectDetails({ data }) {
   const { title, price, thumb, priceURL } = data.markdownRemark.frontmatter
 
   // defined inside component because of use of local variable `thumb`
-  const StyledDiv = styled.div`
+  const StyledHeader = styled.header`
     font-size: 2rem;
     color: white;
     font-family: "Poppins";
@@ -80,14 +80,13 @@ export default function ProjectDetails({ data }) {
           paddingTop: "50px",
           position: "absolute",
           margin: "20px",
-          zIndex: "100",
         }}
       >
         <ArrowBackIosRoundedIcon style={{ fontSize: "13px" }} /> Back to Pricing
         & Packages
       </AniLink>
-      <div>
-        <StyledDiv>
+      <article>
+        <StyledHeader>
           <ThemeProvider theme={theme}>
             <PricingBtn
               price={price}
@@ -99,10 +98,10 @@ export default function ProjectDetails({ data }) {
           </ThemeProvider>
           <h2>{price}</h2>
           <h1>{title}</h1>
-        </StyledDiv>
+        </StyledHeader>
         <TextContainer dangerouslySetInnerHTML={{ __html: html }} />
         {/* ↑ This is not a problem since we are injecting .md as html. So, any attempts of XSS will get parsed as markdown text */}
-      </div>
+      </article>
     </Layout>
   )
 }

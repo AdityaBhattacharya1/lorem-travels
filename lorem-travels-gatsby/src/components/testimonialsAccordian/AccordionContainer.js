@@ -26,14 +26,14 @@ const useStyles = makeStyles({
 function AccordionContainer() {
   const classes = useStyles()
   return (
-    <div id="testimonials">
+    <article id="testimonials">
       <Typography variant="h3" className={classes.heading}>
         Our Testimonials
       </Typography>
       {testimonialsData.map(({ id, title, details }) => {
         return <AccordionTemplate key={id} title={title} details={details} />
       })}
-    </div>
+    </article>
   )
 }
 

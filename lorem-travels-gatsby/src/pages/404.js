@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-const ErrorHeading = styled.div`
+const ErrorHeading = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
