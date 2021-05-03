@@ -37,7 +37,12 @@ const Burger = () => {
 
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+      <StyledBurger
+        open={open}
+        onClick={() => setOpen(!open)}
+        tabIndex="0"
+        className="styled-burger"
+      >
         <div />
         <div />
       </StyledBurger>

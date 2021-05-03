@@ -51,7 +51,7 @@ function PricingContainer() {
   const classes = useStyles()
   return (
     <Layout>
-      <Typography className={classes.heading} variant="h2">
+      <Typography className={classes.heading} variant="h2" role="heading">
         Our Packages
       </Typography>
       <Grid container className={classes.gridContainer} justify="space-around">

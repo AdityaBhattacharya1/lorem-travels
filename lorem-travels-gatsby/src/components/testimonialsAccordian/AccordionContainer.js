@@ -26,7 +26,7 @@ const useStyles = makeStyles({
 function AccordionContainer() {
   const classes = useStyles()
   return (
-    <article id="testimonials">
+    <article id="testimonials" aria-label="Our Testimonials" role="contentinfo">
       <Typography variant="h3" className={classes.heading}>
         Our Testimonials
       </Typography>

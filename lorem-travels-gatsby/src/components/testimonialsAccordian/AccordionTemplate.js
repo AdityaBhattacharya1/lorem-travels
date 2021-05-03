@@ -24,7 +24,11 @@ export default function AccordionTemplate({ title, details }) {
   const classes = useStyles()
 
   return (
-    <section className={classes.root}>
+    <section
+      className={classes.root}
+      aria-label="Individual Testimonial"
+      role="tree"
+    >
       <Accordion style={{ backgroundColor: "#FEF5DD" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

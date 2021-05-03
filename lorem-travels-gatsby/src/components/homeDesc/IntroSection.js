@@ -49,8 +49,10 @@ function IntroSection({ title, text }) {
       className={classes.introSection}
       style={{ display: "flex", paddingBottom: "40px", paddingTop: "20px" }}
     >
-      <IntroText>{title}</IntroText>
-      <IntroSecondaryText>{text}</IntroSecondaryText>
+      <IntroText aria-label="Introductory title">{title}</IntroText>
+      <IntroSecondaryText aria-label="Description accompanying introductory title">
+        {text}
+      </IntroSecondaryText>
     </IntroSectionContainer>
   )
 }
