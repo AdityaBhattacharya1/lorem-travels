@@ -34,7 +34,7 @@ const Ul = styled.ul`
 
 const RightNav = ({ open }) => {
   return (
-    <Ul open={open}>
+    <Ul open={open} role="menu">
       <li role="menuitem">
         <AniLink cover direction="left" bg="#A08A83" duration={2} to="/">
           Home
