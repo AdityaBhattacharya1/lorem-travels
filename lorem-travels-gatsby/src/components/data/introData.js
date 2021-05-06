@@ -1,3 +1,9 @@
+export const headerData = {
+  title: "Welcome to Lorem Travels",
+  desc:
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis veniam nulla autem sit, in necessitatibus reiciendis nostrum doloribus ipsa iste?",
+}
+
 export const introData = [
   {
     id: 1,
@@ -18,9 +24,3 @@ export const introData = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis veniam nulla autem sit, in necessitatibus reiciendis nostrum doloribus ipsa iste?",
   },
 ]
-
-export const headerData = {
-  title: "Welcome to Lorem Travels",
-  desc:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis veniam nulla autem sit, in necessitatibus reiciendis nostrum doloribus ipsa iste?",
-}
