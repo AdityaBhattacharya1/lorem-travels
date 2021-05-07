@@ -20,6 +20,9 @@ const IntroText = styled.p`
   @media screen and (max-width: 820px) {
     padding-left: 10px;
   }
+  @media screen and (min-width: 1920px) {
+    font-size: 5rem;
+  }
 `
 
 const IntroSectionContainer = styled.section`
@@ -40,6 +43,10 @@ const IntroSecondaryText = styled.p`
   font-family: "Poppins";
   color: #04295c;
   font-weight: 600;
+
+  @media screen and (min-width: 1920px) {
+    font-size: 2rem;
+  }
 `
 
 function IntroSection({ title, text }) {
