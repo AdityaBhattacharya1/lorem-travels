@@ -9,6 +9,7 @@ const theme = createMuiTheme({})
 const useStyles = makeStyles({
   heading: {
     paddingTop: "120px",
+    paddingBottom: "20px",
     textAlign: "center",
     color: "#000",
     fontWeight: 1000,

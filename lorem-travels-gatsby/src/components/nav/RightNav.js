@@ -17,7 +17,7 @@ const Ul = styled.ul`
   top: 0;
   right: 0;
   height: 1005px;
-  width: 300px;
+  width: 20%;
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
   li {
@@ -29,6 +29,12 @@ const Ul = styled.ul`
   z-index: 10 !important;
   @media screen and (min-height: 1000px) {
     height: 100%;
+  }
+  @media screen and (min-width: 1920px) {
+    li {
+      font-size: 1.5rem;
+      padding: 30px 0px;
+    }
   }
 `
 
