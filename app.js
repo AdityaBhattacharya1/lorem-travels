@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 20)
         }
 
-        document.addEventListener('scroll', lazyload)
+        document.addEventListener('scroll', lazyload, {passive: true})
         window.addEventListener('resize', lazyload)
         window.addEventListener('orientationChange', lazyload)
     }
