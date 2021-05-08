@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
 });*/
 
 // Click-slideshow zone
-let box = document.querySelectorAll('.box')
+let box = document.getElementsByClassName('box')
 
 box.forEach((block) =>
     block.addEventListener('click', () => {
@@ -206,23 +206,31 @@ window.onload = function () {
         }
     })
 
-    testim.addEventListener('touchstart', function (e) {
-        touchStartPos = e.changedTouches[0].clientX
-    })
+    testim.addEventListener(
+        'touchstart',
+        function (e) {
+            touchStartPos = e.changedTouches[0].clientX
+        },
+        { passive: true }
+    )
 
-    testim.addEventListener('touchend', function (e) {
-        touchEndPos = e.changedTouches[0].clientX
+    testim.addEventListener(
+        'touchend',
+        function (e) {
+            touchEndPos = e.changedTouches[0].clientX
 
-        touchPosDiff = touchStartPos - touchEndPos
+            touchPosDiff = touchStartPos - touchEndPos
 
-        if (touchPosDiff > 0 + ignoreTouch) {
-            testimLeftArrow.click()
-        } else if (touchPosDiff < 0 - ignoreTouch) {
-            testimRightArrow.click()
-        } else {
-            return
-        }
-    })
+            if (touchPosDiff > 0 + ignoreTouch) {
+                testimLeftArrow.click()
+            } else if (touchPosDiff < 0 - ignoreTouch) {
+                testimRightArrow.click()
+            } else {
+                return
+            }
+        },
+        { passive: true }
+    )
 }
 
 // Dark mode toggler zone
@@ -317,7 +325,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 20)
         }
 
-        document.addEventListener('scroll', lazyload, {passive: true})
+        document.addEventListener('scroll', lazyload, { passive: true })
         window.addEventListener('resize', lazyload)
         window.addEventListener('orientationChange', lazyload)
     }
