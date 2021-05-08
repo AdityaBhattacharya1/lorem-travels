@@ -11,6 +11,7 @@ window.addEventListener('load', function () {
 });*/
 
 // Click-slideshow zone
+// Can't use getElementsByClassName as it returns an HTMLCollection which cannot be iterated over by foreach
 let box = document.querySelectorAll('.box')
 
 box.forEach((block) =>
