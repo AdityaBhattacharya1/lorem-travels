@@ -7,6 +7,7 @@ import ArrowBackIosRoundedIcon from "@material-ui/icons/ArrowBackIosRounded"
 import PricingBtn from "../components/pricingPage/PricingBtn"
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles"
 import ShoppingBasketRoundedIcon from "@material-ui/icons/ShoppingBasketRounded"
+import Helmet from "react-helmet"
 
 const TextContainer = styled.article`
   font-family: "Poppins";
@@ -70,6 +71,9 @@ export default function ProjectDetails({ data }) {
   `
   return (
     <Layout>
+      <Helmet>
+        <title>{`${title} - Lorem Travels`}</title>
+      </Helmet>
       <AniLink
         cover
         direction="right"
