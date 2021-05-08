@@ -15,8 +15,26 @@ const useStyles = makeStyles(theme => ({
     padding: "10px 40px 20px 40px",
   },
   heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular,
+    fontSize: "1rem",
+    fontFamily: "Poppins",
+    fontWeight: 600,
+    color: "#04295c",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "2rem",
+    },
+  },
+  details: {
+    fontFamily: "Poppins",
+    color: "#04295c",
+    [theme.breakpoints.up("xl")]: {
+      fontSize: "1.5rem",
+    },
+  },
+  accordionContainer: {
+    backgroundColor: "#FEF5DD",
+    [theme.breakpoints.up("xl")]: {
+      marginTop: "10px",
+    },
   },
 }))
 
@@ -29,23 +47,16 @@ export default function AccordionTemplate({ title, details }) {
       aria-label="Individual Testimonial"
       role="tree"
     >
-      <Accordion style={{ backgroundColor: "#FEF5DD" }}>
+      <Accordion className={classes.accordionContainer}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="testimonial-panel-content"
           id="testimonial-panel-header"
         >
-          <Typography
-            className={classes.heading}
-            style={{ fontFamily: "Poppins", fontWeight: 600, color: "#04295c" }}
-          >
-            {title}
-          </Typography>
+          <Typography className={classes.heading}>{title}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography style={{ fontFamily: "Poppins", color: "#04295c" }}>
-            {details}
-          </Typography>
+          <Typography className={classes.details}>{details}</Typography>
         </AccordionDetails>
       </Accordion>
     </section>

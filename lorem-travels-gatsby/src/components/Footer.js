@@ -12,7 +12,7 @@ const theme = createMuiTheme({})
 const useStyles = makeStyles({
   footerText: {
     fontFamily: "Poppins",
-    [theme.breakpoints.down("xl")]: {
+    [theme.breakpoints.up("xl")]: {
       fontSize: "25px",
     },
     [theme.breakpoints.down("sm")]: {
