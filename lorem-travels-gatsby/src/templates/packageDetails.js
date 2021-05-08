@@ -8,6 +8,7 @@ import PricingBtn from "../components/pricingPage/PricingBtn"
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles"
 import ShoppingBasketRoundedIcon from "@material-ui/icons/ShoppingBasketRounded"
 import Helmet from "react-helmet"
+import { useMediaQuery } from "react-responsive"
 
 const TextContainer = styled.article`
   font-family: "Poppins";
@@ -32,6 +33,16 @@ const TextContainer = styled.article`
   &:last-child {
     padding-bottom: 25px;
   }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 1.5rem;
+
+    h1,
+    h2,
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
 `
 
 const theme = createMuiTheme({
@@ -45,6 +56,7 @@ const theme = createMuiTheme({
 export default function ProjectDetails({ data }) {
   const { html } = data.markdownRemark
   const { title, price, thumb, priceURL } = data.markdownRemark.frontmatter
+  const isExtraLargeScreen = useMediaQuery({ query: "(min-width: 1920px)" })
 
   // defined inside component because of use of local variable `thumb`
   const StyledHeader = styled.header`
@@ -67,6 +79,10 @@ export default function ProjectDetails({ data }) {
 
     @media screen and (max-width: 600px) {
       font-size: 1rem;
+    }
+
+    @media screen and (min-width: 1920px) {
+      font-size: 3rem;
     }
   `
   return (
@@ -96,7 +112,7 @@ export default function ProjectDetails({ data }) {
               price={price}
               priceURL={priceURL}
               variant="outlined"
-              size={2}
+              size={isExtraLargeScreen ? 1 : 2}
               icon={<ShoppingBasketRoundedIcon />}
             />
           </ThemeProvider>
