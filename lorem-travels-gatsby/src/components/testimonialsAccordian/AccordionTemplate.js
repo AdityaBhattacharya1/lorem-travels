@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     fontWeight: 600,
     color: "#04295c",
     [theme.breakpoints.up("xl")]: {
-      fontSize: "2rem",
+      fontSize: "1.5rem",
     },
   },
   details: {

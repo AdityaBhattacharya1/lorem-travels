@@ -57,7 +57,7 @@ function PricingContainer() {
       <Grid container className={classes.gridContainer} justify="space-around">
         {packages.map(({ frontmatter, id }) => {
           return (
-            <Grid item xs={12} sm={6} md={4} xl={2} key={id}>
+            <Grid item xs={12} sm={6} md={4} xl={3} key={id}>
               <PricingCard
                 title={frontmatter.title}
                 details={frontmatter.desc}
