@@ -17,7 +17,7 @@ const Ul = styled.ul`
   top: 0;
   right: 0;
   height: 1005px;
-  width: 20%;
+  width: 300px;
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
   li {
@@ -35,6 +35,7 @@ const Ul = styled.ul`
       font-size: 1.5rem;
       padding: 30px 0px;
     }
+    width: 500px;
   }
 `
 

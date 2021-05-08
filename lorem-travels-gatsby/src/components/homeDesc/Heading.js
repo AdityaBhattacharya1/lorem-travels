@@ -37,7 +37,7 @@ const useStyles = makeStyles({
       marginRight: "1000px",
     },
     [theme.breakpoints.down("xl")]: {
-      fontSize: "7rem",
+      fontSize: "6rem",
       padding: "120px 0px 0px 50px",
     },
     [theme.breakpoints.down("md")]: {
