@@ -9,7 +9,6 @@ if ('function' === typeof importScripts) {
     workbox.routing.registerRoute(
         ({ url }) =>
             url.origin === 'https://fonts.googleapis.com' ||
-            url.origin === 'https://use.fontawesome.com/' ||
             url.origin === 'https://cdn2.iconfinder.com/data/icons/',
         new workbox.strategies.StaleWhileRevalidate()
     )

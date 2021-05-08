@@ -11,7 +11,7 @@ window.addEventListener('load', function () {
 });*/
 
 // Click-slideshow zone
-let box = document.getElementsByClassName('box')
+let box = document.querySelectorAll('.box')
 
 box.forEach((block) =>
     block.addEventListener('click', () => {
