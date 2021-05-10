@@ -20,8 +20,8 @@ function Layout({ children }) {
           property="og:title"
           content="Lorem Travels - A fake travel agency"
         />
-        {/* <meta property="og:image" content="" />
-        <meta property="twitter:site" content="" /> */}
+        <meta property="og:image" content={"/favicon.ico"} />
+        <meta property="twitter:site" content={"/favicon.ico"} />
         <meta
           property="twitter:description"
           content="Lorem Travels - A fake travel agency"
