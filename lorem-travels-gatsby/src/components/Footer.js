@@ -42,6 +42,7 @@ function Footer() {
               rel="noopener"
               aria-label="Link to the author's (Aditya Bhattacharya's) Github page"
               role="contentinfo"
+              aria-label="Github page"
             >
               Made by Aditya Bhattacharya
             </StyledLink>

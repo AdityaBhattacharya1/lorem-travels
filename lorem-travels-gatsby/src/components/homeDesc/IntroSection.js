@@ -53,8 +53,8 @@ function IntroSection({ title, text }) {
   const classes = useStyles()
   return (
     <IntroSectionContainer className={classes.introSection}>
-      <IntroText aria-label="Title.">{title}</IntroText>
-      <IntroSecondaryText aria-label="Description.">{text}</IntroSecondaryText>
+      <IntroText>{title}</IntroText>
+      <IntroSecondaryText>{text}</IntroSecondaryText>
     </IntroSectionContainer>
   )
 }
