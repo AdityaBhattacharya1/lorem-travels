@@ -176,7 +176,7 @@ function Layout({ children }) {
       <header role="menu" aria-label="Header">
         <Navbar />
       </header>
-      <main role="main">{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   )

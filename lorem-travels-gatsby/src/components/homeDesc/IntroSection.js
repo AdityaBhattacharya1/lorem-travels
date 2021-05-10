@@ -10,7 +10,7 @@ const useStyles = makeStyles({
 
 // 1. Gatsby styled component plugin seems to have a problem
 // with Typography and other material-ui components
-const IntroText = styled.p`
+const IntroText = styled.h2`
   padding: 150px 0px 0px 80px;
   font-size: 3rem;
   font-weight: 700;
@@ -52,14 +52,9 @@ const IntroSecondaryText = styled.p`
 function IntroSection({ title, text }) {
   const classes = useStyles()
   return (
-    <IntroSectionContainer
-      className={classes.introSection}
-      style={{ display: "flex", paddingBottom: "40px", paddingTop: "20px" }}
-    >
-      <IntroText aria-label="Introductory title">{title}</IntroText>
-      <IntroSecondaryText aria-label="Description accompanying introductory title">
-        {text}
-      </IntroSecondaryText>
+    <IntroSectionContainer className={classes.introSection}>
+      <IntroText aria-label="Title.">{title}</IntroText>
+      <IntroSecondaryText aria-label="Description.">{text}</IntroSecondaryText>
     </IntroSectionContainer>
   )
 }

@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 function ImageContainer() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1279px)" })
   return (
-    <aside role="complementary">
+    <aside>
       {/* 
           Since the static image takes up space and prevents heading and the section container from sticking together,
           we return an empty div. If null, react fragment or undefined is returned, then there would be no component
