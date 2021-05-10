@@ -30,7 +30,12 @@ function Layout({ children }) {
           property="twitter:title"
           content="Lorem Travels - A fake travel agency"
         />
-        <meta property="twitter:image" content="../images/soc-img.png" />
+        {/* Since I'm not hosting the images (eg: on S3), I'm gonna use the shortcut and just ref the github image */}
+        <meta
+          property="twitter:image"
+          content="https://github.com/AdityaBhattacharya1/lorem-travels/blob/gatsby-ver/lorem-travels-gatsby/src/images/soc-img.png?raw=true"
+        />
+
         {/* <meta name="twitter:card" content="" /> */}
         <meta
           property="twitter:image:alt"
