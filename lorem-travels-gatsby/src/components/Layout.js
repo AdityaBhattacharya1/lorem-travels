@@ -21,7 +21,7 @@ function Layout({ children }) {
           content="Lorem Travels - A fake travel agency"
         />
         <meta property="og:image" content="../images/soc-img.png" />
-        <meta property="twitter:site" content="../images/soc-img.png" />
+        {/* <meta property="twitter:site" content="" /> */}
         <meta
           property="twitter:description"
           content="Lorem Travels - A fake travel agency"
@@ -30,15 +30,15 @@ function Layout({ children }) {
           property="twitter:title"
           content="Lorem Travels - A fake travel agency"
         />
-        {/* <meta property="twitter:image" content="" />
-        <meta name="twitter:card" content="" /> */}
+        <meta property="twitter:image" content="../images/soc-img.png" />
+        {/* <meta name="twitter:card" content="" /> */}
         <meta
           property="twitter:image:alt"
           content="Lorem Travels - A fake travel agency"
         />
         <title>Lorem Travels</title>
-        {/* below are the apple icons */}
-        <link rel="apple-touch-icon" href="icons/apple-icon-180.png" />
+        {/* below are the apple icons (optional) */}
+        {/* <link rel="apple-touch-icon" href="icons/apple-icon-180.png" />
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
 
@@ -171,7 +171,7 @@ function Layout({ children }) {
           rel="apple-touch-startup-image"
           href="icons/apple-splash-1136-640.jpg"
           media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-        />
+        /> */}
       </Helmet>
       <header role="heading" aria-label="Header">
         <Navbar />
