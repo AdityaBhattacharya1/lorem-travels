@@ -70,6 +70,7 @@ function PricingCard({
 }) {
   const classes = useStyles()
   const isExtraLargeScreen = useMediaQuery({ query: "(min-width: 1920px)" })
+  const isExtraSmallScreen = useMediaQuery({ query: "(max-width: 400px)" })
 
   return (
     <Card className={classes.root}>
@@ -105,7 +106,7 @@ function PricingCard({
             priceURL={priceURL}
             price={price}
             size={isExtraLargeScreen ? 3 : 4}
-            icon={<ShoppingBasketRoundedIcon />}
+            icon={!isExtraSmallScreen ? <ShoppingBasketRoundedIcon /> : null}
           />
           <Button size="small" color="primary">
             <AniLink
