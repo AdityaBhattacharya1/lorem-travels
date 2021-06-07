@@ -59,8 +59,8 @@
             rel="apple-touch-icon"
             href="%PUBLIC_URL%/Images/Lorem-Travels-favicon.ico"
         />
-        <script src="./service-worker.js" type="module"></script>
-        <script>
+        <script src="./service-worker.js" type="module" defer></script>
+        <script defer>
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', function () {
                     navigator.serviceWorker.register('/service-worker.js')
@@ -202,28 +202,6 @@
             href="icons/apple-splash-1136-640.jpg"
             media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
         />
-        <noscript>
-            <div
-                style="
-                    position: fixed;
-                    top: 0px;
-                    left: 0px;
-                    z-index: 3000000000000000;
-                    height: 100%;
-                    width: 100%;
-                    background-color: #000;
-                    color: #fff;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                "
-            >
-                <p style="margin-left: 10px">
-                    JavaScript is not enabled. Please enable JavaScript to
-                    continue browsing this website.
-                </p>
-            </div>
-        </noscript>
     </head>
     <body>
         <!-- Preloader (optional) -->
@@ -690,12 +668,12 @@
                                 name="lastname"
                                 placeholder="Your last name"
                             />
-                            <label for="pkg">Package choice</label>
+                            <label for="package">Package choice</label>
                             <input
                                 type="text"
-                                id="lname"
+                                id="package"
                                 autocomplete="off"
-                                name="lastname"
+                                name="package"
                                 placeholder="Your choice of package"
                             />
                             <input
@@ -706,10 +684,16 @@
                         </form>
                         <br />
                         <p>
-                            You can also call us at: <br /><br />
-                            +1 123456789<br />
-                            +1 123456789<br />
-                            +1 123456789
+                            You can also call us at:
+                            <a href="tel:+1 123456789" style="display: block"
+                                >+1 123456789
+                            </a>
+                            <a href="tel:+1 123456789" style="display: block"
+                                >+1 123456789
+                            </a>
+                            <a href="tel:+1 123456789" style="display: block"
+                                >+1 123456789
+                            </a>
                         </p>
                         <br />
                         <p>
@@ -790,5 +774,27 @@
         <script src="app.js"></script>
         <!-- Google Analytics (optional, just uncomment the script tag and the code in app.js)-->
         <!--<script src="./assets/js/google-analytics.js" defer></script>-->
+        <noscript>
+            <div
+                style="
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                    z-index: 3000000000000000;
+                    height: 100%;
+                    width: 100%;
+                    background-color: #000;
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                "
+            >
+                <p style="margin-left: 10px">
+                    JavaScript is not enabled. Please enable JavaScript to
+                    continue browsing this website.
+                </p>
+            </div>
+        </noscript>
     </body>
 </html>

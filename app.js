@@ -5,13 +5,18 @@ const leftArrow = document.getElementById('leftArrow')
 const rightArrow = document.getElementById('rightArrow')
 let counter = 0
 
+const formElem = document.querySelector('#form-elem')
+
+formElem.addEventListener('submit', (e) => {
+    e.preventDefault()
+})
+
 /* Pre-loader zone (optional; just uncomment the code below to make the preloader functional.):
 window.addEventListener('load', function () {
     document.querySelector('body').classList.add("loaded")
 });*/
 
 // Click-slideshow zone
-// Can't use getElementsByClassName as it returns an HTMLCollection which cannot be iterated over by foreach
 let box = document.querySelectorAll('.box')
 
 box.forEach((block) =>
@@ -140,7 +145,7 @@ let testim = document.getElementById('testim'),
     touchPosDiff,
     ignoreTouch = 30
 
-window.onload = function () {
+window.addEventListener('load', function () {
     // Testimonials zone
     function playSlide(slide) {
         for (let k = 0; k < testimDots.length; k++) {
@@ -179,16 +184,16 @@ window.onload = function () {
         playSlide((currentSlide += 1))
     })
 
-    for (let l = 0; l < testimDots.length; l++) {
-        testimDots[l].addEventListener('click', function () {
+    testimDots.forEach((testimDot) => {
+        testimDot.addEventListener('click', function () {
             playSlide((currentSlide = testimDots.indexOf(this)))
         })
-    }
+    })
 
     playSlide(currentSlide)
 
     // keyboard shortcuts
-    document.addEventListener('keyup', function (e) {
+    document.addEventListener('keyup', (e) => {
         switch (e.code) {
             case 37:
                 testimLeftArrow.click()
@@ -209,7 +214,7 @@ window.onload = function () {
 
     testim.addEventListener(
         'touchstart',
-        function (e) {
+        (e) => {
             touchStartPos = e.changedTouches[0].clientX
         },
         { passive: true }
@@ -217,7 +222,7 @@ window.onload = function () {
 
     testim.addEventListener(
         'touchend',
-        function (e) {
+        (e) => {
             touchEndPos = e.changedTouches[0].clientX
 
             touchPosDiff = touchStartPos - touchEndPos
@@ -232,7 +237,7 @@ window.onload = function () {
         },
         { passive: true }
     )
-}
+})
 
 // Dark mode toggler zone
 const darkBtn = document.querySelector('#dark-toggle-btn')
@@ -248,7 +253,8 @@ function toggler() {
 
 darkBtn.addEventListener('click', toggler)
 
-/* And, if you need to monitor the visits, time spent active on the website
+/* 
+And, if you need to monitor the visits, time spent active on the website
    and other analytics on this website, Google Analytics is also provided below.
    Just uncomment the code below (This is just basic tracking. To enable or disable certain tracking
    features, go to https://developers.google.com/analytics/devguides/collection/analyticsjs):
@@ -276,7 +282,8 @@ if (dnt != "1" && dnt != "yes") {
     );
     ga("create", "", "auto");
     ga("send", "pageview");
-}*/
+}
+*/
 
 // Lazy loading section
 document.addEventListener('DOMContentLoaded', function () {
@@ -284,10 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if ('IntersectionObserver' in window) {
         lazyloadImages = document.querySelectorAll('.lazy')
-        let imageObserver = new IntersectionObserver(function (
-            entries,
-            observer
-        ) {
+        let imageObserver = new IntersectionObserver((entries) => {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
                     let image = entry.target
