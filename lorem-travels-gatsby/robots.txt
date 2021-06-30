@@ -1,5 +1,3 @@
-Sitemap: http://thomasjbradley.ca/sitemap.xml
-
 User-Agent: *
 Crawl-delay: 120
 Disallow: /*.xml$

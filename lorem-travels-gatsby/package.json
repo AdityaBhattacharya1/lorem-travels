@@ -1,9 +1,9 @@
 {
   "name": "lorem-travels-gatsby",
-  "private": true,
+  "private": false,
   "description": "Lorem Travels - A sample travel agency",
   "version": "0.1.0",
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
