@@ -101,6 +101,7 @@ export default function ProjectDetails({ data }) {
           position: "absolute",
           margin: "20px",
         }}
+        className="back-to-pricing"
       >
         <ArrowBackIosRoundedIcon style={{ fontSize: "13px" }} /> Back to Pricing
         & Packages
@@ -120,7 +121,7 @@ export default function ProjectDetails({ data }) {
           <h1>{title}</h1>
         </StyledHeader>
         <TextContainer dangerouslySetInnerHTML={{ __html: html }} />
-        {/* ↑ This is not a problem since we are injecting .md as html. So, any attempts of XSS will get parsed as markdown text */}
+        {/* ↑ This is not a problem since we are injecting .md as html. So, any attempts of XSS should get parsed as markdown text */}
       </article>
     </Layout>
   )
