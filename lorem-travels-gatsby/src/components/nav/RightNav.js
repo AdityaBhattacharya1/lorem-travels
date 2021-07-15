@@ -6,9 +6,6 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 const Ul = styled.ul`
   list-style: none;
   display: flex;
-  li {
-    padding: 18px 10px;
-  }
   flex-flow: column nowrap;
   background-color: #a08a83;
   color: white;
@@ -20,13 +17,14 @@ const Ul = styled.ul`
   width: 300px;
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
+  z-index: 10 !important;
   li {
     color: #fff;
+    padding: 18px 10px;
     display: flex;
     justify-content: center;
     align-content: center;
   }
-  z-index: 10 !important;
   @media screen and (min-height: 1000px) {
     height: 100%;
   }
@@ -41,9 +39,9 @@ const Ul = styled.ul`
 
 const RightNav = ({ open }) => {
   return (
-    <Ul open={open} role="menu">
+    <Ul open={open} role="menu" className="right-nav">
       <li role="menuitem">
-        <AniLink cover direction="left" bg="#A08A83" duration={2} to="/">
+        <AniLink cover direction="left" bg="#A08A83" duration={1} to="/">
           Home
         </AniLink>
       </li>
@@ -51,7 +49,7 @@ const RightNav = ({ open }) => {
         <Link to="/#how-it-works">How it works</Link>
       </li>
       <li role="menuitem">
-        <AniLink cover direction="left" bg="#A08A83" duration={2} to="/pricing">
+        <AniLink cover direction="left" bg="#A08A83" duration={1} to="/pricing">
           Packages & Pricing
         </AniLink>
       </li>
