@@ -15,7 +15,8 @@
 -   Statically generated (_SSG_)
 -   Works offline (requires the pages to be loaded before at least once, in order to facilitate browser caching)
 -   Can act like an e-commerce store (payment powered by Stripe API)
--   Mobile responsive and page transitions
+-   Mobile responsive
+-   Page transitions
 
 # Technologies Used:
 
@@ -24,10 +25,11 @@
 -   Webpack (default bundler)
 -   Material-UI and styled-components
 -   Stripe API
+-   Cypress (for end-to-end testing)
 
 # Installation and Running
 
-```
+```bash
     // To install the app:
     git clone https://github.com/AdityaBhattacharya1/lorem-travels
     cd lorem-travels-gatsby
@@ -40,11 +42,17 @@
     gatsby develop
 ```
 
+# Testing
+
+```bash
+    npm run test:cypress
+```
+
 # Usage
 
 If you want to edit the data (testimonial accordion, introductory paragraphs and/or package cards):
 
-```
+```bash
 cd .\lorem-travels-gatsby\src\components\data
 
 // To edit intro data:
@@ -88,7 +96,7 @@ To add your own products and be able to accept payment via Stripe API, follow th
 -   In the root of the folder `.\lorem-travels-gatsby\` create a `.env` file.
 -   Follow this format in your .env file:
 
-```
+```sh
 .env file
 ---------
 
@@ -101,12 +109,12 @@ CANCEL_URL="https://lorem-travels.vercel.app/pricing"
 
 -   Go to `./lorem-travels-gatsby/src/utils/stripejs.js` and enter your own publishable key (from step 2) like this:
 
-```
-    const getStripe = () => {
-  if (!stripePromise) {
-    stripePromise = loadStripe("<YOUR PUBLISHABLE API KEY>")
-  }
-  return stripePromise
+```js
+const getStripe = () => {
+	if (!stripePromise) {
+		stripePromise = loadStripe('<YOUR PUBLISHABLE API KEY>')
+	}
+	return stripePromise
 }
 ```
 
