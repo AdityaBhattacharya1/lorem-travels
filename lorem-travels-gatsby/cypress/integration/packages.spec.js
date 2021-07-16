@@ -1,6 +1,6 @@
 describe("Tour packages test", () => {
   before(() => {
-    cy.visit("http://localhost:8000/pricing")
+    cy.visit("/pricing")
   })
 
   it("Should check if a page has been dynamically created for the packages", function () {
@@ -18,9 +18,25 @@ describe("Tour packages test", () => {
     })
     // wait 2 seconds to facilitate for page transition animation.
     cy.wait(2000)
-    // If we are able to find the .back-to-pricing tag, it obviously
-    // means that a page for the package has been dynamically generated.
-    cy.get(".back-to-pricing").click({ force: true })
+
+    /*
+      In order to assert that a new page for the packages have been dynamically created, we check for 2 things:
+
+      1. custom slug: If a custom slug has been created, it means that gatsby node worked successfully.
+
+      2. Back to pricing page button: If the button is visible and functional, that means that the DOM has rendered successfully.
+
+      3. Title of the page: If title is a match, that means the header tags have successfully loaded.
+    */
+
+    cy.get("#gatsby-focus-wrapper > div > div > main > article > header > h1")
+      .invoke("text")
+      .then(text => {
+        cy.url().should("include", Cypress._.kebabCase(text))
+        cy.title().should("include", text)
+      })
+
+    cy.get(".back-to-pricing").click({ force: true }) // forcing to be true since the link may get hidden under the navbar in which case the test will fail.
     cy.location().should(location => {
       expect(location.hash).to.be.empty
       expect(location.href).to.eq("http://localhost:8000/pricing")

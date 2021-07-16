@@ -1,6 +1,6 @@
 describe("Navigation Bar and Menu tests", () => {
   before(() => {
-    cy.visit("http://localhost:8000")
+    cy.visit("/")
   })
 
   it("Should check if Navbar opens ", () => {
@@ -13,7 +13,7 @@ describe("Navigation Bar and Menu tests", () => {
   it("Should check if Navbar links are up", () => {
     const routes = ["", "#how-it-works", "pricing", "pricing/#testimonials"]
     routes.forEach(route => {
-      cy.request(`http://localhost:8000/${route.path}`).should(response => {
+      cy.request(`/${route.path}`).should(response => {
         expect(response.status).to.eq(200)
       })
     })
@@ -34,7 +34,7 @@ describe("Navigation Bar and Menu tests", () => {
   })
 
   it("Should check if logo link works", () => {
-    cy.visit("http://localhost:8000/pricing")
+    cy.visit("/pricing")
     cy.get(".logo").click()
     cy.location().should(location => {
       expect(location.hash).to.be.empty

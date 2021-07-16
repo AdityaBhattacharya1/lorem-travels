@@ -1,6 +1,6 @@
 describe("Accordion test", () => {
   before(() => {
-    cy.visit("http://localhost:8000/pricing")
+    cy.visit("/pricing")
   })
 
   it("Should check if accordions open and close correctly", function () {

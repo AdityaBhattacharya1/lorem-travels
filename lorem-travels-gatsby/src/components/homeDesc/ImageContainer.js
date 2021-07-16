@@ -8,7 +8,7 @@ function ImageContainer() {
     <aside>
       {/* 
           Since the static image takes up space and prevents heading and the section container from sticking together,
-          we return an empty div. If null, react fragment or undefined is returned, then there would be no component
+          we return an empty div. Before, if we would have put null, react fragment or undefined, then there would be no component
           to style and the two sections would clash on smaller screens.
       */}
 
@@ -26,6 +26,7 @@ function ImageContainer() {
             opacity: 1,
             paddingBottom: "10px",
           }}
+          className="home-image"
         />
       ) : (
         <div></div>
