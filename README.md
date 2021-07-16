@@ -30,15 +30,15 @@
 # Installation and Running
 
 ```bash
-    // To install the app:
+    # To install the app:
     git clone https://github.com/AdityaBhattacharya1/lorem-travels
     cd lorem-travels-gatsby
 
-    // To run the app:
-    // If you do not have gatsby globally installed:
+    # To run the app:
+    # If you do not have gatsby globally installed:
     npm develop
 
-    // If you do have gatsby globally installed (preferred):
+    # If you do have gatsby globally installed (preferred):
     gatsby develop
 ```
 
@@ -55,10 +55,10 @@ If you want to edit the data (testimonial accordion, introductory paragraphs and
 ```bash
 cd .\lorem-travels-gatsby\src\components\data
 
-// To edit intro data:
+# To edit intro data:
 cd introData.js
 
-// To edit accordion data:
+# To edit accordion data:
 cd accordionData.js
 ```
 
