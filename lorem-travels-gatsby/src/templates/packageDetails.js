@@ -45,6 +45,33 @@ const TextContainer = styled.article`
   }
 `
 
+const StyledHeader = styled.header`
+  font-size: 2rem;
+  color: white;
+  font-family: "Poppins";
+  padding-bottom: 30px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(${props => props.thumb}) no-repeat center;
+  background-size: cover;
+
+  @media screen and (max-width: 960px) {
+    font-size: 1.5rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: 1920px) {
+    font-size: 3rem;
+  }
+`
+
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -58,33 +85,6 @@ export default function ProjectDetails({ data }) {
   const { title, price, thumb, priceURL } = data.markdownRemark.frontmatter
   const isExtraLargeScreen = useMediaQuery({ query: "(min-width: 1920px)" })
 
-  // defined inside component because of use of local variable `thumb`
-  const StyledHeader = styled.header`
-    font-size: 2rem;
-    color: white;
-    font-family: "Poppins";
-    padding-bottom: 30px;
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url(${thumb}) no-repeat center;
-    background-size: cover;
-
-    @media screen and (max-width: 960px) {
-      font-size: 1.5rem;
-    }
-
-    @media screen and (max-width: 600px) {
-      font-size: 1rem;
-    }
-
-    @media screen and (min-width: 1920px) {
-      font-size: 3rem;
-    }
-  `
   return (
     <Layout>
       <Helmet>
@@ -107,7 +107,7 @@ export default function ProjectDetails({ data }) {
         & Packages
       </AniLink>
       <article>
-        <StyledHeader>
+        <StyledHeader thumb={thumb}>
           <ThemeProvider theme={theme}>
             <PricingBtn
               price={price}
