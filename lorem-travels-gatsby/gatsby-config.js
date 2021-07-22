@@ -31,12 +31,18 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://lorem-travels.vercel.app",
+        policy: [{ userAgent: "*", disallow: "/*.xml$", crawlDelay: 120 }],
+      },
+    },
   ],
   siteMetadata: {
     title: "Lorem Travels",
     description: "Lorem Travels - A sample travel agency",
     author: "Aditya Bhattacharya",
+    siteUrl: "https://lorem-travels.vercel.app",
   },
 }
-
-
