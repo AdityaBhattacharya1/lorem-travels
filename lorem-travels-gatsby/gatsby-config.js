@@ -43,27 +43,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-advanced-sitemap`,
       options: {
-        // 1 query for each data type
-        query: `
-            {
-            allSitePage {
-              edges {
-                node {
-                  path
-                }
-              }
-            }
-          }
-          `,
-        mapping: {
-          allSitePage: {
-            sitemap: `pages`,
-          },
-        },
         exclude: [`/404`, `/404.html`, `/offline-plugin-app-shell-fallback`],
         createLinkInHead: true,
         addUncaughtPages: true,
       },
+      additionalSitemaps: [
+        {
+          name: `package-pages`,
+          url: `https://lorem-travels.vercel.app/sitemap-pages.xml`,
+        },
+      ],
     },
   ],
   siteMetadata: {
