@@ -46,12 +46,14 @@ module.exports = {
         // 1 query for each data type
         query: `
             {
-          allSitePage {
-            nodes {
-              path
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
             }
           }
-        }  
           `,
         mapping: {
           allSitePage: {
