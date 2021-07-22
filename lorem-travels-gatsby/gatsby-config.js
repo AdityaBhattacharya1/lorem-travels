@@ -2,6 +2,8 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+const siteUrl = `https://lorem-travels.vercel.app`
+
 module.exports = {
   /* Your site config here */
   plugins: [
@@ -42,6 +44,19 @@ module.exports = {
       resolve: "gatsby-plugin-sitemap",
       options: {
         createLinkInHead: true,
+        query: `
+        {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => siteUrl,
+        resolvePages: ({ allSitePage: { nodes } }) => {
+          return nodes.map(page => ({ ...page }))
+        },
       },
     },
   ],
@@ -49,6 +64,6 @@ module.exports = {
     title: "Lorem Travels",
     description: "Lorem Travels - A sample travel agency",
     author: "Aditya Bhattacharya",
-    siteUrl: "https://lorem-travels.vercel.app",
+    siteUrl,
   },
 }
