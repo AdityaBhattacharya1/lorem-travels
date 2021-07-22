@@ -35,7 +35,13 @@ module.exports = {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://lorem-travels.vercel.app",
-        policy: [{ userAgent: "*", disallow: "/*.xml$", crawlDelay: 120 }],
+        policy: [{ userAgent: "*", crawlDelay: 120 }],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        createLinkInHead: true,
       },
     },
   ],
