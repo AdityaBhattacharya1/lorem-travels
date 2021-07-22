@@ -40,7 +40,29 @@ module.exports = {
         policy: [{ userAgent: "*", crawlDelay: 120 }],
       },
     },
-    `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        // 1 query for each data type
+        query: `
+            {
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }  
+          `,
+        mapping: {
+          allSitePage: {
+            sitemap: `pages`,
+          },
+        },
+        exclude: [`/404`, `/404.html`, `/offline-plugin-app-shell-fallback`],
+        createLinkInHead: true,
+        addUncaughtPages: true,
+      },
+    },
   ],
   siteMetadata: {
     title: "Lorem Travels",
