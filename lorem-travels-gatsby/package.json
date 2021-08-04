@@ -31,7 +31,7 @@
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-source-filesystem": "^3.10.0",
     "gatsby-transformer-remark": "^4.8.0",
-    "gatsby-transformer-sharp": "^3.10.0",
+    "gatsby-transformer-sharp": "^3.11.0",
     "gsap": "^3.7.1",
     "nodemon": "^2.0.12",
     "react": "^17.0.2",
