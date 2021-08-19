@@ -13,4 +13,3 @@ jobs:
           working-directory: lorem-travels-gatsby
           start: npm start
           wait-on: 'http://localhost:8000'
-          command: npm run test:cypress
