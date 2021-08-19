@@ -13,7 +13,7 @@ describe("Navigation Bar and Menu tests", () => {
   it("Should check if Navbar links are up", () => {
     const routes = ["", "#how-it-works", "pricing", "pricing/#testimonials"]
     routes.forEach(route => {
-      cy.request(`/${route.path}`).should(response => {
+      cy.request(`/${route}`).should(response => {
         expect(response.status).to.eq(200)
       })
     })
