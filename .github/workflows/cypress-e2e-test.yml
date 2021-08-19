@@ -1,0 +1,51 @@
+name: End-to-end tests
+on: [push]
+jobs:
+
+  basic-ubuntu-18:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Cypress tests
+        uses: cypress-io/github-action@v2
+        with:
+          working-directory: ./lorem-travels-gatsby
+          build: npx cypress info
+
+  basic-ubuntu-20:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Cypress tests
+        uses: cypress-io/github-action@v2
+        with:
+          working-directory: ./lorem-travels-gatsby
+          build: npx cypress info
+
+  basic-on-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Cypress tests
+        uses: cypress-io/github-action@v2
+        with:
+          working-directory: ./lorem-travels-gatsby
+          build: npx cypress info
+
+  basic-on-mac:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Cypress tests
+        uses: cypress-io/github-action@v2
+        with:
+          working-directory: ./lorem-travels-gatsby
+          build: npx cypress info
