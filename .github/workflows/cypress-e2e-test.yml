@@ -11,8 +11,10 @@ jobs:
       - name: Cypress tests
         uses: cypress-io/github-action@v2
         with:
-          working-directory: lorem-travels-gatsby
+          working-directory: /lorem-travels-gatsby
           build: npx cypress info
+        env:
+          NODE_ENV: production
 
   basic-ubuntu-20:
     runs-on: ubuntu-20.04
@@ -23,7 +25,7 @@ jobs:
       - name: Cypress tests
         uses: cypress-io/github-action@v2
         with:
-          working-directory: lorem-travels-gatsby
+          working-directory: /lorem-travels-gatsby
           build: npx cypress info
 
   basic-on-windows:
@@ -35,7 +37,7 @@ jobs:
       - name: Cypress tests
         uses: cypress-io/github-action@v2
         with:
-          working-directory: lorem-travels-gatsby
+          working-directory: /lorem-travels-gatsby
           build: npx cypress info
 
   basic-on-mac:
@@ -47,5 +49,5 @@ jobs:
       - name: Cypress tests
         uses: cypress-io/github-action@v2
         with:
-          working-directory: lorem-travels-gatsby
+          working-directory: /lorem-travels-gatsby
           build: npx cypress info
