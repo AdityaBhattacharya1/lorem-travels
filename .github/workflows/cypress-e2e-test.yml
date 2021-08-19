@@ -12,6 +12,6 @@ jobs:
         with:
           working-directory: lorem-travels-gatsby
           build: npm run build
-          start: npm serve
+          start: npm run serve
           wait-on: 'http://localhost:9000'
           env: CI=true
