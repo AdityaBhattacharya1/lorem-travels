@@ -15,3 +15,4 @@ jobs:
           start: npm run serve
           wait-on: 'http://localhost:9000'
           env: CI=true
+          config: 'baseUrl=http://localhost:9000'
