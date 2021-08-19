@@ -3,8 +3,7 @@ updates:
   - package-ecosystem: 'npm'
     directory: '/lorem-travels-gatsby'
     schedule:
-      interval: 'weekly'
-      day: 'wednesday'
+      interval: 'monthly'
     commit-message:
       prefix: '[Dependabot]'
     labels:
