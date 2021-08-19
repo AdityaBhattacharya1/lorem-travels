@@ -38,9 +38,12 @@ describe("Navigation Bar and Menu tests", () => {
     cy.get(".logo").click()
     cy.location().should(location => {
       expect(location.hash).to.be.empty
-      expect(location.href).to.eq(`${Cypress.env('prod_url')}/pricing`)
-      expect(location.origin).to.eq(Cypress.env('prod_url'))
-      expect(location.pathname).to.eq("/pricing")
+      expect(location.href).to.eq("http://localhost:8000/")
+      expect(location.host).to.eq("localhost:8000")
+      expect(location.hostname).to.eq("localhost")
+      expect(location.origin).to.eq("http://localhost:8000")
+      expect(location.pathname).to.eq("/")
+      expect(location.port).to.eq("8000")
       expect(location.protocol).to.eq("http:")
       expect(location.search).to.be.empty
     })
