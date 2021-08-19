@@ -12,9 +12,9 @@ jobs:
         with:
           working-directory: lorem-travels-gatsby
           build: npm run build
-          start: npm run serve
-          wait-on: 'http://localhost:9000'
+          start: npm run serve --port 8000
+          wait-on: 'http://localhost:8000'
           env:
             CI=true
-            PROD_URL='http://localhost:9000'
-          config: 'baseUrl=http://localhost:9000'
+            PROD_URL='http://localhost:8000'
+          config: 'baseUrl=http://localhost:8000'
