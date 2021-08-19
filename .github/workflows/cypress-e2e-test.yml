@@ -12,7 +12,7 @@ jobs:
         with:
           working-directory: lorem-travels-gatsby
           build: npm run build
-          start: npm run serve --port 8000
+          start: npm run serve:ci
           wait-on: 'http://localhost:8000'
           env:
             CI=true
