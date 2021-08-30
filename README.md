@@ -1,6 +1,10 @@
 <center>
 <h1>Lorem Travels</h1>
 <h2>A Totally (Not) Real Travel Agency</h2>
+<p>
+	<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/AdityaBhattacharya1/lorem-travels/Cypress%20tests?style=for-the-badge">
+	<img alt="GitHub" src="https://img.shields.io/github/license/AdityaBhattacharya1/lorem-travels?color=blue&style=for-the-badge">
+</p>
 <br />
 <a href="https://lorem-travels.vercel.app/">
 <img src="./README-assets/hero.png" />
