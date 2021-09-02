@@ -2,7 +2,7 @@ describe("Home page tests", () => {
   beforeEach(() => cy.visit("/"))
 
   it("Should check if home page button works", () => {
-    cy.get("#gatsby-focus-wrapper > div > div > main > button").click({
+    cy.get("#gatsby-focus-wrapper > div > div > main > button > span.MuiButton-label").click({
       force: true,
     })
     // wait 1.5 seconds to facilitate for page transition animation.
