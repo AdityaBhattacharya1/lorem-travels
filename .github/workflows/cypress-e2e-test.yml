@@ -1,7 +1,7 @@
 name: Cypress tests
 on: 
  push:
-     branches: [ main ]
+     branches: [ gatsby-ver ]
 jobs:
   cypress-run:
     name: Cypress run
