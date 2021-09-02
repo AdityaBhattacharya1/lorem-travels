@@ -2,6 +2,8 @@ name: Cypress tests
 on: 
  push:
      branches: [ gatsby-ver ]
+ pull_request:
+     branches: [ gatsby-ver ]
 jobs:
   cypress-run:
     name: Cypress run
