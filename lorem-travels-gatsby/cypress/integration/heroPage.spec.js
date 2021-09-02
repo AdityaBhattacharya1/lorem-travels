@@ -9,7 +9,6 @@ describe("Home page tests", () => {
     cy.wait(2000)
     cy.location().should(location => {
       expect(location.hash).to.be.empty
-      expect(location.href).to.eq("http://localhost:8000/pricing")
       expect(location.host).to.eq("localhost:8000")
       expect(location.hostname).to.eq("localhost")
       expect(location.origin).to.eq("http://localhost:8000")
