@@ -4,6 +4,7 @@
 <p>
 	<img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/AdityaBhattacharya1/lorem-travels/Cypress%20tests?style=for-the-badge">
 	<img alt="GitHub" src="https://img.shields.io/github/license/AdityaBhattacharya1/lorem-travels?color=blue&style=for-the-badge">
+	<img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=currently%20down&style=for-the-badge&up_color=dark%20green&up_message=up%20and%20running&url=https%3A%2F%2Florem-travels.vercel.app">
 </p>
 <br />
 <a href="https://lorem-travels.vercel.app/">
