@@ -28,7 +28,7 @@
     "gatsby-plugin-react-helmet": "^4.13.0",
     "gatsby-plugin-robots-txt": "^1.6.9",
     "gatsby-plugin-sharp": "^3.13.0",
-    "gatsby-plugin-styled-components": "^4.13.0",
+    "gatsby-plugin-styled-components": "^4.14.0",
     "gatsby-plugin-transition-link": "^1.20.5",
     "gatsby-source-filesystem": "^3.13.0",
     "gatsby-transformer-remark": "^4.8.0",
