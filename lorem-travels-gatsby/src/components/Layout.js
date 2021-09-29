@@ -7,6 +7,8 @@ function Layout({ children }) {
   return (
     <>
       <Helmet>
+      <script data-goatcounter="https://adityabhattacharya1.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
         <meta
           name="description"
           content="Lorem Travels - A fake travel agency"
@@ -177,7 +179,6 @@ function Layout({ children }) {
           href="icons/apple-splash-1136-640.jpg"
           media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
         /> */}
-        <script>if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"adityabhattacharya1",utcoffset:"6"}))};sessionStorage.setItem("_swa","1");</script>
       </Helmet>
       <header role="heading" aria-label="Header">
         <Navbar />
