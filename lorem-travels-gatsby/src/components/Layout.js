@@ -7,6 +7,7 @@ function Layout({ children }) {
   return (
     <>
       <Helmet>
+      {/* Substitute your link here. Alternatively, you could comment the script tag below to completely disable analytics */}
       <script data-goatcounter="https://adityabhattacharya1.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
         <meta

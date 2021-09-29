@@ -20,6 +20,7 @@
 -   Statically generated (_SSG_)
 -   Works offline (requires the pages to be loaded before at least once, in order to facilitate browser caching)
 -   Can act like an e-commerce store (payment powered by Stripe API)
+-   Privacy friendly analytics (with GoatCounter)
 -   Mobile responsive
 -   Page transitions
 
@@ -30,6 +31,7 @@
 -   Webpack (default bundler)
 -   Material-UI and styled-components
 -   Stripe API
+-   GoatCounter (for analytics)
 -   Cypress (for end-to-end testing)
 
 # Installation and Running
@@ -55,7 +57,26 @@
 
 # Usage
 
-If you want to edit the data (testimonial accordion, introductory paragraphs and/or package cards):
+To set up analytics, first go to the [GoatCounter](https://www.goatcounter.com/) and set up your account.
+Then, copy the link given and paste it in `./lorem-travels-gatsby/src/components/Layout.js` as follows:
+```js
+Layout.js
+---------
+
+// inside the <Helment> component
+// Your link should look something like this:
+// https://<USERNAME>.goatcounter.com/count 
+// where <USERNAME> is the username with which you signed up to Goat Counter
+<Helmet>
+     <script data-goatcounter=<YOUR LINK HERE>
+        async src="//gc.zgo.at/count.js"></script>
+    ...
+</Helmet>
+
+```
+In order to disable analytics completely, just comment or delete the script tag. 
+
+To edit the data (testimonial accordion, introductory paragraphs and/or package cards):
 
 ```bash
 cd .\lorem-travels-gatsby\src\components\data
