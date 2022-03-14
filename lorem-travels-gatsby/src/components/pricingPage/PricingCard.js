@@ -3,7 +3,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import {
   makeStyles,
   ThemeProvider,
-  createMuiTheme,
+  createTheme,
 } from "@material-ui/core/styles"
 import {
   Card,
@@ -18,7 +18,7 @@ import PricingBtn from "./PricingBtn"
 import ShoppingBasketRoundedIcon from "@material-ui/icons/ShoppingBasketRounded"
 import { useMediaQuery } from "react-responsive"
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#04295c",
@@ -92,7 +92,7 @@ function PricingCard({
             style={{
               color: "#7E7673",
               fontFamily: "Poppins",
-              color: "#04295c",
+              // color: "#04295c",
             }}
             className={classes.cardDetails}
           >

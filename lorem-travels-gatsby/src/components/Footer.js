@@ -1,13 +1,13 @@
 import React from "react"
 import { AppBar, Container, Toolbar, Typography } from "@material-ui/core"
-import { makeStyles, createMuiTheme } from "@material-ui/core/styles"
+import { makeStyles, createTheme } from "@material-ui/core/styles"
 import styled from "styled-components"
 
 const StyledLink = styled.a`
   border-bottom: 2px dotted white;
 `
 
-const theme = createMuiTheme({})
+const theme = createTheme({})
 
 const useStyles = makeStyles({
   footerText: {
@@ -42,7 +42,6 @@ function Footer() {
               rel="noopener"
               aria-label="Link to the author's (Aditya Bhattacharya's) Github page"
               role="contentinfo"
-              aria-label="Github page"
             >
               Made by Aditya Bhattacharya
             </StyledLink>

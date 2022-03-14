@@ -2,13 +2,13 @@ import React from "react"
 import {
   makeStyles,
   ThemeProvider,
-  createMuiTheme,
+  createTheme,
 } from "@material-ui/core/styles"
 import { Typography, Button } from "@material-ui/core"
 import { headerData } from "../data/introData"
 import { navigate } from "gatsby"
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#FD951D",

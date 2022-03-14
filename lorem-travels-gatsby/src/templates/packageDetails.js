@@ -5,7 +5,7 @@ import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import ArrowBackIosRoundedIcon from "@material-ui/icons/ArrowBackIosRounded"
 import PricingBtn from "../components/pricingPage/PricingBtn"
-import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles"
+import { ThemeProvider, createTheme } from "@material-ui/core/styles"
 import ShoppingBasketRoundedIcon from "@material-ui/icons/ShoppingBasketRounded"
 import Helmet from "react-helmet"
 import { useMediaQuery } from "react-responsive"
@@ -72,7 +72,7 @@ const StyledHeader = styled.header`
   }
 `
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: "#fff",

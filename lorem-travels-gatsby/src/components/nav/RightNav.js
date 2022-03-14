@@ -40,20 +40,20 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open} role="menu" className="right-nav">
-      <li role="menuitem">
+      <li>
         <AniLink cover direction="left" bg="#A08A83" duration={1} to="/">
           Home
         </AniLink>
       </li>
-      <li role="menuitem">
+      <li>
         <Link to="/#how-it-works">How it works</Link>
       </li>
-      <li role="menuitem">
+      <li>
         <AniLink cover direction="left" bg="#A08A83" duration={1} to="/pricing">
           Packages & Pricing
         </AniLink>
       </li>
-      <li role="menuitem">
+      <li>
         <Link to="/pricing/#testimonials">Testimonials</Link>
       </li>
     </Ul>

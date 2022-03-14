@@ -42,11 +42,7 @@ export default function AccordionTemplate({ title, details }) {
   const classes = useStyles()
 
   return (
-    <section
-      className={classes.root}
-      aria-label="Individual Testimonial"
-      role="tree"
-    >
+    <section className={classes.root} aria-label="Individual Testimonial">
       <Accordion className={classes.accordionContainer}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}

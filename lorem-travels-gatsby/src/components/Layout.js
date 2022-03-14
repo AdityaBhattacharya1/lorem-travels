@@ -7,9 +7,12 @@ function Layout({ children }) {
   return (
     <>
       <Helmet>
-      {/* Substitute your link here. Alternatively, you could comment the script tag below to completely disable analytics */}
-      <script data-goatcounter="https://adityabhattacharya1.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+        {/* Substitute your link here. Alternatively, you could comment the script tag below to completely disable analytics */}
+        <script
+          data-goatcounter="https://adityabhattacharya1.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        ></script>
         <meta
           name="description"
           content="Lorem Travels - A fake travel agency"
@@ -181,7 +184,7 @@ function Layout({ children }) {
           media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
         /> */}
       </Helmet>
-      <header role="heading" aria-label="Header">
+      <header aria-label="Header">
         <Navbar />
       </header>
       <main>{children}</main>

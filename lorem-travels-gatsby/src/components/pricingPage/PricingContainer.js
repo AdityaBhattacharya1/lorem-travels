@@ -1,12 +1,12 @@
 import React from "react"
 import PricingCard from "./PricingCard"
 import Layout from "../Layout"
-import { makeStyles, createMuiTheme } from "@material-ui/core/styles"
+import { makeStyles, createTheme } from "@material-ui/core/styles"
 import { Typography, Grid } from "@material-ui/core"
 import AccordionContainer from "../testimonialsAccordian/AccordionContainer"
 import { useStaticQuery, graphql } from "gatsby"
 
-const theme = createMuiTheme({})
+const theme = createTheme({})
 
 const useStyles = makeStyles({
   heading: {
@@ -54,7 +54,11 @@ function PricingContainer() {
       <Typography className={classes.heading} variant="h2" role="heading">
         Our Packages
       </Typography>
-      <Grid container className={classes.gridContainer} justify="space-around">
+      <Grid
+        container
+        className={classes.gridContainer}
+        justifyContent="space-around"
+      >
         {packages.map(({ frontmatter, id }) => {
           return (
             <Grid item xs={12} sm={6} md={4} xl={3} key={id}>

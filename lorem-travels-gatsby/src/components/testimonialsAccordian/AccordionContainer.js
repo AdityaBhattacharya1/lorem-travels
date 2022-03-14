@@ -1,10 +1,10 @@
 import { Typography } from "@material-ui/core"
 import React from "react"
 import AccordionTemplate from "./AccordionTemplate"
-import { makeStyles, createMuiTheme } from "@material-ui/core/styles"
+import { makeStyles, createTheme } from "@material-ui/core/styles"
 import { testimonialsData } from "../data/testimonialsData"
 
-const theme = createMuiTheme({})
+const theme = createTheme({})
 
 const useStyles = makeStyles({
   heading: {
