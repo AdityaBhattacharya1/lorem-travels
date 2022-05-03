@@ -40,7 +40,7 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-responsive": "^8.2.0",
-    "styled-components": "^5.3.3"
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "cypress": "^9.6.0",
