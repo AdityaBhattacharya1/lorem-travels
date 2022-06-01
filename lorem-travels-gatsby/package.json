@@ -34,7 +34,7 @@
     "gatsby-transformer-remark": "^4.11.0",
     "gatsby-transformer-sharp": "^4.13.0",
     "gsap": "^3.9.1",
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.16",
     "radium": "^0.26.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
