@@ -20,7 +20,7 @@
     "@material-ui/styles": "^4.11.4",
     "@stripe/stripe-js": "^1.24.0",
     "babel-plugin-styled-components": "^2.0.6",
-    "gatsby": "^4.9.3",
+    "gatsby": "^5.3.3",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-image": "^2.9.0",
     "gatsby-plugin-material-ui": "^3.0.1",
