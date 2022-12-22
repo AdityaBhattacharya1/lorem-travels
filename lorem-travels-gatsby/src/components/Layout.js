@@ -13,6 +13,9 @@ function Layout({ children }) {
           async
           src="//gc.zgo.at/count.js"
         ></script>
+        {/* A bit more data collection (1984 🤯🤯) */}
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
+
         <meta
           name="description"
           content="Lorem Travels - A fake travel agency"

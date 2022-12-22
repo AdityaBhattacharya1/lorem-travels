@@ -16,15 +16,6 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
-<<<<<<< HEAD
-    "@material-ui/icons": "^4.11.3",
-    "@material-ui/styles": "^4.11.5",
-    "@stripe/stripe-js": "^1.31.0",
-    "babel-plugin-styled-components": "^2.0.7",
-    "gatsby": "^4.13.1",
-    "gatsby-plugin-advanced-sitemap": "^2.1.0",
-    "gatsby-plugin-image": "^1.14.0",
-=======
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
     "@stripe/stripe-js": "^1.24.0",
@@ -32,7 +23,6 @@
     "gatsby": "^4.9.3",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-image": "^2.9.0",
->>>>>>> parent of 52c63d0... oops
     "gatsby-plugin-material-ui": "^3.0.1",
     "gatsby-plugin-offline": "^5.15.1",
     "gatsby-plugin-react-helmet": "^4.14.0",
