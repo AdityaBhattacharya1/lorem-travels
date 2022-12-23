@@ -7,15 +7,6 @@ function Layout({ children }) {
   return (
     <>
       <Helmet>
-        {/* Substitute your link here. Alternatively, you could comment the script tag below to completely disable analytics */}
-        <script
-          data-goatcounter="https://adityabhattacharya1.goatcounter.com/count"
-          async
-          src="//gc.zgo.at/count.js"
-        ></script>
-        {/* A bit more data collection (1984 🤯🤯) */}
-        <script async src="https://cdn.splitbee.io/sb.js"></script>
-
         <meta
           name="description"
           content="Lorem Travels - A fake travel agency"
